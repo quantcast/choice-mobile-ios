@@ -1,0 +1,163 @@
+{
+    "coreUiLabels": {
+        "initScreenTitle": "We value your privacy",
+        "agreeButton": "AGREE",
+        "initScreenRejectButton": "DISAGREE",
+        "initScreenSettingsButton": "MORE OPTIONS"
+    },
+    "premiumUiLabels": {},
+    "theme": {},
+    "coreConfig": {
+        "quantcastAccountId": "fdPOEe5CwS0oM",
+        "privacyMode": [
+            "GDPR"
+        ],
+        "hashCode": "hN3+pzoQiIu8g4tb3qbf8A",
+        "publisherCountryCode": "AA",
+        "publisherName": "New site",
+        "vendorPurposeIds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "vendorFeaturesIds": [
+            1,
+            2,
+            3
+        ],
+        "vendorPurposeLegitimateInterestIds": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ],
+        "vendorSpecialFeaturesIds": [
+            1,
+            2
+        ],
+        "vendorSpecialPurposesIds": [
+            1,
+            2
+        ],
+        "googleEnabled": false,
+        "initScreenBodyTextOption": 1,
+        "consentScope": "service",
+        "lang_": "en",
+        "displayUi": "always",
+        "publisherPurposeIds": [
+            1,
+            6,
+            5
+        ],
+        "publisherPurposeLegitimateInterestIds": [],
+        "publisherSpecialPurposesIds": [],
+        "publisherFeaturesIds": [],
+        "publisherSpecialFeaturesIds": [],
+        "stacks": [
+            1,
+            42
+        ],
+        "softOptInEnabled": false,
+        "uiLayout": "popup",
+        "vendorListUpdateFreq": 30,
+        "thirdPartyStorageType": "iframe",
+        "showSummaryView": true,
+        "persistentConsentLinkLocation": 3
+    },
+    "nonIabVendorsInfo": {
+        "nonIabVendorList": [{
+            "vendorId": 2,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "LinkedIn",
+            "description": "LinkedIn connects the world's professionals to make them more productive and successful.",
+            "privacyPolicyUrl": "https://www.linkedin.com/legal/privacy-policy",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 3,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Bing",
+            "description": "Bing helps you turn information into action, making it faster and easier to go from searching to doing.",
+            "privacyPolicyUrl": "https://about.ads.microsoft.com/en-us/resources/policies/microsoft-advertising-privacy-policy",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 5,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Autopilot",
+            "privacyPolicyUrl": "https://www.autopilothq.com/legal/privacy-policy",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 6,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Optimizely",
+            "description": "Enabling businesses to deliver continuous experimentation and personalization across websites, mobile apps and connected devices.",
+            "privacyPolicyUrl": "https://www.optimizely.com/privacy/",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 7,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Hotjar",
+            "description": "Hotjar reveals the online behavior of a website's users.",
+            "privacyPolicyUrl": "https://www.hotjar.com/legal/policies/privacy",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 1,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Facebook",
+            "description": "Our mission is to give people the power to build community and bring the world closer together.",
+            "privacyPolicyUrl": "https://www.facebook.com/policy.php",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 8,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Google",
+            "description": "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, a search engine, cloud computing, software, and hardware.",
+            "privacyPolicyUrl": "https://policies.google.com/privacy",
+            "nonIabPurposeConsentIds": [],
+            "nonIabPurposeLegitimateInterestIds": []
+        },
+        {
+            "vendorId": 4,
+            "pCode": "fdPOEe5CwS0oM",
+            "name": "Marketo Marketing",
+            "description": "Marketo offers the leading Engagement Platform that empowers marketers to build brand value, grow revenue, and prove impact.",
+            "privacyPolicyUrl": "https://documents.marketo.com/legal/privacy/",
+            "nonIabPurposeConsentIds": [
+                2,
+                4,
+                6
+            ],
+            "nonIabPurposeLegitimateInterestIds": [
+                5,
+                3,
+                1
+            ]
+        }
+        ],
+        "updateAt": "2020-09-14T00:27:57.635875Z",
+        "nonIabVendorsHash": "3792745FB5E8F809FD27C84131D14C3B"
+    }
+}
