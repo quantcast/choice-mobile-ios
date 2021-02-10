@@ -1,0 +1,11 @@
+framework module ChoiceMobile {
+  umbrella header "ChoiceMobile.h"
+
+  export *
+  module * { export * }
+}
+
+module ChoiceMobile.Swift {
+    header "ChoiceMobile-Swift.h"
+    requires objc
+}
