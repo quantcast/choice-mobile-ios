@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChoiceMobile
+import AppTrackingTransparency
 @_exported import ChoiceMobile
 import CommonCrypto
 import Foundation
@@ -145,6 +146,7 @@ public struct VendorList {
     @objc override dynamic public init()
   }
   @objc @_hasMissingDesignatedInitializers public class Publisher : ObjectiveC.NSObject {
+    @objc final public let vendorID: Swift.Int
     @objc final public let consents: ChoiceMobile.BooleanVector
     @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
     @objc final public let customPurpose: ChoiceMobile.TCData.ConsentAndLI
@@ -154,6 +156,14 @@ public struct VendorList {
   }
   @objc deinit
   @objc override dynamic public init()
+}
+public struct DeviceStorageDisclosureList : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Disclosure : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct Stack {
 }
@@ -216,6 +226,9 @@ public protocol GeoIPRepositoryProtocol {
   public init(gdprApplies: Swift.Bool, hasGlobalConsent: Swift.Bool, hasGlobalScope: Swift.Bool, metadata: Swift.String, nonIabVendorConsents: [Swift.Int : Swift.Bool])
   @objc override dynamic public init()
   @objc deinit
+}
+public protocol DeviceStorageDisclosureListRepositoryProtocol {
+  func getDeviceStorageDisclosureList(withUrl url: Foundation.URL?, onComplete: @escaping (ChoiceMobile.DeviceStorageDisclosureList) -> Swift.Void, onError: @escaping () -> Swift.Void)
 }
 @objc public protocol ChoiceCmpDelegate : AnyObject {
   @objc func cmpDidLoad(info: ChoiceMobile.PingResponse)
