@@ -232,7 +232,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 + (ChoiceCmp * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate;
+- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
@@ -261,6 +261,12 @@ typedef SWIFT_ENUM(NSInteger, CmpStatus, open) {
 /// CMP is in an error state. A CMP shall not respond to any other API requests if this cmpStatus is present.
 /// A CMP may set this status if, for any reason, it is unable to perform the operations in compliance with the TCF.
   CmpStatusError = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, DisplayStatus, open) {
+  DisplayStatusVisible = 0,
+  DisplayStatusHidden = 1,
+  DisplayStatusDisabled = 2,
 };
 
 typedef SWIFT_ENUM(NSInteger, EventStatus, open) {
@@ -299,6 +305,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 @interface NonIABData : NSObject
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull nonIabVendorConsents;
+@property (nonatomic, readonly, copy) NSString * _Nonnull consent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -306,6 +313,16 @@ SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 
 SWIFT_CLASS("_TtC12ChoiceMobile12PingResponse")
 @interface PingResponse : NSObject
+@property (nonatomic, readonly) BOOL gdprAppliesIsKnown;
+@property (nonatomic, readonly) BOOL doesGdprApply SWIFT_UNAVAILABLE;
+@property (nonatomic, readonly) BOOL cmpLoaded;
+@property (nonatomic, readonly) enum CmpStatus cmpStatus;
+@property (nonatomic, readonly) enum DisplayStatus displayStatus;
+@property (nonatomic, readonly, copy) NSString * _Nonnull apiVersion;
+@property (nonatomic, readonly) NSInteger cmpVersion;
+@property (nonatomic, readonly) NSInteger cmpId;
+@property (nonatomic, readonly) NSInteger gvlVersion;
+@property (nonatomic, readonly) NSInteger tcfPolicyVersion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -585,7 +602,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 + (ChoiceCmp * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate;
+- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
@@ -614,6 +631,12 @@ typedef SWIFT_ENUM(NSInteger, CmpStatus, open) {
 /// CMP is in an error state. A CMP shall not respond to any other API requests if this cmpStatus is present.
 /// A CMP may set this status if, for any reason, it is unable to perform the operations in compliance with the TCF.
   CmpStatusError = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, DisplayStatus, open) {
+  DisplayStatusVisible = 0,
+  DisplayStatusHidden = 1,
+  DisplayStatusDisabled = 2,
 };
 
 typedef SWIFT_ENUM(NSInteger, EventStatus, open) {
@@ -652,6 +675,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 @interface NonIABData : NSObject
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull nonIabVendorConsents;
+@property (nonatomic, readonly, copy) NSString * _Nonnull consent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -659,6 +683,16 @@ SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 
 SWIFT_CLASS("_TtC12ChoiceMobile12PingResponse")
 @interface PingResponse : NSObject
+@property (nonatomic, readonly) BOOL gdprAppliesIsKnown;
+@property (nonatomic, readonly) BOOL doesGdprApply SWIFT_UNAVAILABLE;
+@property (nonatomic, readonly) BOOL cmpLoaded;
+@property (nonatomic, readonly) enum CmpStatus cmpStatus;
+@property (nonatomic, readonly) enum DisplayStatus displayStatus;
+@property (nonatomic, readonly, copy) NSString * _Nonnull apiVersion;
+@property (nonatomic, readonly) NSInteger cmpVersion;
+@property (nonatomic, readonly) NSInteger cmpId;
+@property (nonatomic, readonly) NSInteger gvlVersion;
+@property (nonatomic, readonly) NSInteger tcfPolicyVersion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

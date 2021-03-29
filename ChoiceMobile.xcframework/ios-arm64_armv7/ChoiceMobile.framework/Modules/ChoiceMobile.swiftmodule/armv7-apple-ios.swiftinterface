@@ -73,6 +73,16 @@ public struct NewCoreUILabels : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
+@objc public enum DisplayStatus : Swift.Int {
+  case visible
+  case hidden
+  case disabled
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public typealias BooleanVector = [Swift.String : Swift.Bool]
 public struct Declarations {
 }
@@ -99,6 +109,22 @@ public struct Feature : Swift.Hashable {
   public static func == (a: ChoiceMobile.Feature, b: ChoiceMobile.Feature) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers @objc public class PingResponse : ObjectiveC.NSObject {
+  final public let gdprApplies: Swift.Bool?
+  @objc public var gdprAppliesIsKnown: Swift.Bool {
+    @objc get
+  }
+  @available(*, unavailable)
+  @objc public var doesGdprApply: Swift.Bool {
+    @objc get
+  }
+  @objc final public let cmpLoaded: Swift.Bool
+  @objc final public let cmpStatus: ChoiceMobile.CmpStatus
+  @objc final public let displayStatus: ChoiceMobile.DisplayStatus
+  @objc final public let apiVersion: Swift.String
+  @objc final public let cmpVersion: Swift.Int
+  @objc final public let cmpId: Swift.Int
+  @objc final public let gvlVersion: Swift.Int
+  @objc final public let tcfPolicyVersion: Swift.Int
   @objc deinit
   @objc override dynamic public init()
 }
@@ -184,7 +210,7 @@ public struct Stack {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChoiceCmp : ObjectiveC.NSObject {
   @objc public static let shared: ChoiceMobile.ChoiceCmp
-  @objc public func startChoice(pcode: Swift.String, delegate: ChoiceMobile.ChoiceCmpDelegate)
+  @objc public func startChoice(pcode: Swift.String, delegate: ChoiceMobile.ChoiceCmpDelegate, shouldDisplayIDFA: Swift.Bool = true)
   @objc public func forceDisplayUI()
   public func getVendorList() -> ChoiceMobile.GVL?
   @objc public func getTCData() -> ChoiceMobile.TCData?
@@ -221,10 +247,10 @@ public protocol GeoIPRepositoryProtocol {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class NonIABData : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NonIABData : ObjectiveC.NSObject {
   @objc final public let nonIabVendorConsents: [Swift.Int : Swift.Bool]
-  public init(gdprApplies: Swift.Bool, hasGlobalConsent: Swift.Bool, hasGlobalScope: Swift.Bool, metadata: Swift.String, nonIabVendorConsents: [Swift.Int : Swift.Bool])
-  @objc override dynamic public init()
+  @objc final public let consent: Swift.String
+  public init(gdprApplies: Swift.Bool, hasGlobalConsent: Swift.Bool, hasGlobalScope: Swift.Bool, metadata: Swift.String, nonIabVendorConsents: [Swift.Int : Swift.Bool], consent: Swift.String)
   @objc deinit
 }
 public protocol DeviceStorageDisclosureListRepositoryProtocol {
@@ -247,6 +273,9 @@ extension ChoiceMobile.RestrictionType : Swift.RawRepresentable {}
 extension ChoiceMobile.ConsentLanguage : Swift.Equatable {}
 extension ChoiceMobile.ConsentLanguage : Swift.Hashable {}
 extension ChoiceMobile.ConsentLanguage : Swift.RawRepresentable {}
+extension ChoiceMobile.DisplayStatus : Swift.Equatable {}
+extension ChoiceMobile.DisplayStatus : Swift.Hashable {}
+extension ChoiceMobile.DisplayStatus : Swift.RawRepresentable {}
 extension ChoiceMobile.EventStatus : Swift.Equatable {}
 extension ChoiceMobile.EventStatus : Swift.Hashable {}
 extension ChoiceMobile.EventStatus : Swift.RawRepresentable {}
