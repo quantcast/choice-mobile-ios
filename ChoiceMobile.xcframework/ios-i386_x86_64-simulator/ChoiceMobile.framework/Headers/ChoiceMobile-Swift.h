@@ -214,6 +214,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC12ChoiceMobile6ACData")
 @interface ACData : NSObject
+@property (nonatomic, readonly) BOOL gdprApplies;
 @property (nonatomic, readonly, copy) NSString * _Nonnull acString;
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull additionalVendorConsent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -304,6 +305,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 
 SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 @interface NonIABData : NSObject
+@property (nonatomic, readonly) BOOL gdprApplies;
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull nonIabVendorConsents;
 @property (nonatomic, readonly, copy) NSString * _Nonnull consent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -345,6 +347,8 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 @property (nonatomic, readonly) NSInteger tcfPolicyVersion;
 @property (nonatomic) NSInteger cmpId;
 @property (nonatomic) NSInteger cmpVersion;
+@property (nonatomic, readonly) BOOL gdprAppliesIsKnown;
+@property (nonatomic, readonly) BOOL doesGdprApply;
 @property (nonatomic) enum EventStatus eventStatus;
 @property (nonatomic) enum CmpStatus cmpStatus;
 @property (nonatomic) BOOL isServiceSpecific;
@@ -584,6 +588,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC12ChoiceMobile6ACData")
 @interface ACData : NSObject
+@property (nonatomic, readonly) BOOL gdprApplies;
 @property (nonatomic, readonly, copy) NSString * _Nonnull acString;
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull additionalVendorConsent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -674,6 +679,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 
 SWIFT_CLASS("_TtC12ChoiceMobile10NonIABData")
 @interface NonIABData : NSObject
+@property (nonatomic, readonly) BOOL gdprApplies;
 @property (nonatomic, readonly, copy) NSDictionary<NSNumber *, NSNumber *> * _Nonnull nonIabVendorConsents;
 @property (nonatomic, readonly, copy) NSString * _Nonnull consent;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -715,6 +721,8 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 @property (nonatomic, readonly) NSInteger tcfPolicyVersion;
 @property (nonatomic) NSInteger cmpId;
 @property (nonatomic) NSInteger cmpVersion;
+@property (nonatomic, readonly) BOOL gdprAppliesIsKnown;
+@property (nonatomic, readonly) BOOL doesGdprApply;
 @property (nonatomic) enum EventStatus eventStatus;
 @property (nonatomic) enum CmpStatus cmpStatus;
 @property (nonatomic) BOOL isServiceSpecific;
