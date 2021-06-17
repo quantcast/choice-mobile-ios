@@ -222,6 +222,34 @@ SWIFT_CLASS("_TtC12ChoiceMobile6ACData")
 @end
 
 
+
+SWIFT_PROTOCOL("_TtP12ChoiceMobile12CCPADelegate_")
+@protocol CCPADelegate
+- (void)didReceiveCCPAConsentWithString:(NSString * _Nonnull)string;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
+@interface CCPAViewController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol ChoiceCmpDelegate;
 @class TCData;
 @class NonIABData;
@@ -233,7 +261,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 + (ChoiceCmp * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
+- (void)startCCPA;
+- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate ccpaDelegate:(id <CCPADelegate> _Nullable)ccpaDelegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
@@ -281,11 +310,6 @@ typedef SWIFT_ENUM(NSInteger, EventStatus, open) {
   EventStatusUseractioncomplete = 2,
 };
 
-@class UITableView;
-@class UITableViewCell;
-@class UIViewController;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 @interface MainPrivacyController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
@@ -362,6 +386,9 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
 
 
 
@@ -596,6 +623,34 @@ SWIFT_CLASS("_TtC12ChoiceMobile6ACData")
 @end
 
 
+
+SWIFT_PROTOCOL("_TtP12ChoiceMobile12CCPADelegate_")
+@protocol CCPADelegate
+- (void)didReceiveCCPAConsentWithString:(NSString * _Nonnull)string;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+@class UIViewController;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
+@interface CCPAViewController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
+- (void)viewDidLoad;
+- (void)viewDidDisappear:(BOOL)animated;
+- (void)viewWillAppear:(BOOL)animated;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNavigationBarClass:(Class _Nullable)navigationBarClass toolbarClass:(Class _Nullable)toolbarClass OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=5.0);
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol ChoiceCmpDelegate;
 @class TCData;
 @class NonIABData;
@@ -607,7 +662,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 + (ChoiceCmp * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
+- (void)startCCPA;
+- (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate ccpaDelegate:(id <CCPADelegate> _Nullable)ccpaDelegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
@@ -655,11 +711,6 @@ typedef SWIFT_ENUM(NSInteger, EventStatus, open) {
   EventStatusUseractioncomplete = 2,
 };
 
-@class UITableView;
-@class UITableViewCell;
-@class UIViewController;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12ChoiceMobile21MainPrivacyController")
 @interface MainPrivacyController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
@@ -736,6 +787,9 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
 
 
 

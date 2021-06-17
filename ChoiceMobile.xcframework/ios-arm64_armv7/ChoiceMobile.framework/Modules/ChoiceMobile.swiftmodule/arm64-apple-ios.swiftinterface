@@ -73,6 +73,9 @@ public struct NewCoreUILabels : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
+@objc public protocol CCPADelegate : AnyObject {
+  @objc func didReceiveCCPAConsent(string: Swift.String)
+}
 @objc public enum DisplayStatus : Swift.Int {
   case visible
   case hidden
@@ -200,6 +203,23 @@ public struct Disclosure : Swift.Codable {
 }
 public struct Stack {
 }
+@objc @_inheritsConvenienceInitializers public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  public static func getInstance() -> ChoiceMobile.CCPAViewController?
+  @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc deinit
+  @available(iOS 5.0, *)
+  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
 @_hasMissingDesignatedInitializers public class GVL {
   public var defaultLanguage: ChoiceMobile.ConsentLanguage
   public static var consentLanguages: [Swift.String] {
@@ -218,7 +238,8 @@ public struct Stack {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChoiceCmp : ObjectiveC.NSObject {
   @objc public static let shared: ChoiceMobile.ChoiceCmp
-  @objc public func startChoice(pcode: Swift.String, delegate: ChoiceMobile.ChoiceCmpDelegate, shouldDisplayIDFA: Swift.Bool = true)
+  @objc public func startCCPA()
+  @objc public func startChoice(pcode: Swift.String, delegate: ChoiceMobile.ChoiceCmpDelegate, ccpaDelegate: ChoiceMobile.CCPADelegate? = nil, shouldDisplayIDFA: Swift.Bool = true)
   @objc public func forceDisplayUI()
   public func getVendorList() -> ChoiceMobile.GVL?
   @objc public func getTCData() -> ChoiceMobile.TCData?
