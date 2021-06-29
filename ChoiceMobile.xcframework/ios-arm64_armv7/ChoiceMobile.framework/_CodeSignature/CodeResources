@@ -10,11 +10,11 @@
 		</data>
 		<key>CCPA.nib/objects-11.0+.nib</key>
 		<data>
-		qBtdrYomNz3GwkDC7biciTh3sl8=
+		2glxs5R/xTQ2hkkrkrVVb7YrIgk=
 		</data>
 		<key>CCPA.nib/runtime.nib</key>
 		<data>
-		dZRKu+NiraacaOg/RTnlgs/YBos=
+		ujQqirGscza4kX3nt2RWkAZBrGg=
 		</data>
 		<key>Headers/ChoiceMobile-Swift.h</key>
 		<data>
@@ -30,27 +30,27 @@
 		</data>
 		<key>InformationViewController.nib/objects-11.0+.nib</key>
 		<data>
-		/Bmx5YC71IEOiyOt1QrYl5Nn1NI=
+		jJtCLhCTyHYJWRiPx1F9XiZOhzc=
 		</data>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<data>
-		p5PrZ+b2hUuoOghrE4BaVdslZmE=
+		JpiU7p/vGrKeuDHFWZcPGtjQXzo=
 		</data>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
 		<data>
-		36LnUBnvX/DeTLqtNLMf/5Gw+9U=
+		XCvxRaT0gObdvTPc7o/BduzXYUY=
 		</data>
 		<key>LegitimateViewController.nib/runtime.nib</key>
 		<data>
-		rLBfW8tGcWm7Z3IiaVH/3ur8CX4=
+		2e5nxGqzrlcjcEMfUelTb4E0JiQ=
 		</data>
 		<key>MainPrivacy.nib/objects-11.0+.nib</key>
 		<data>
-		FMBfq2I6klonir4OgH2QzqejsOw=
+		6keRumAobq7kEnhEFenQHEHob7A=
 		</data>
 		<key>MainPrivacy.nib/runtime.nib</key>
 		<data>
-		P+yJKlzxIsXFyEOmAtDH6f6e7vA=
+		bmz+UrofIkthmLLDrMq7px6jVXM=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -118,31 +118,31 @@
 		</data>
 		<key>OptionTableViewCell.nib</key>
 		<data>
-		TtUP2yLl2B+szWRcmXi4GeKd4u0=
+		mIxtYneSLM+gQaUqs1RTdHMVqR8=
 		</data>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>
 		<data>
-		0T+CxhmmEcQUptL4TFs3QJyaFvc=
+		zSMoTzIRocK09K09v/eMdx/P5/I=
 		</data>
 		<key>OptionsViewController.nib/runtime.nib</key>
 		<data>
-		ghBZnyW4ivqJ04ZB/QFYkDUevKU=
+		q12RT756UA+w9a+gh9pkTFnU5Uc=
 		</data>
 		<key>PartnersViewController.nib/objects-11.0+.nib</key>
 		<data>
-		njtWfqtVxJDHTptCmUuMEUI+DP0=
+		CTibBScjKbBhw1xizUftclhHYqM=
 		</data>
 		<key>PartnersViewController.nib/runtime.nib</key>
 		<data>
-		cp0C2uVGQyH3tN2mfRju0pYr0+I=
+		ucFXr3dhhlE3MCMyzNFQgk+Gtsk=
 		</data>
 		<key>StackDetailViewController.nib/objects-11.0+.nib</key>
 		<data>
-		h1CQo4hXtG7RXdVcVYARDPXXuOY=
+		qig75MznQR9CwlWZsOE+eVM7jMY=
 		</data>
 		<key>StackDetailViewController.nib/runtime.nib</key>
 		<data>
-		8fQH2bMQ83dejJrsrNWJy2FMMEc=
+		NbbeRODRsUtnZoqCqYLxsnP6cus=
 		</data>
 		<key>cmp_text_localized.json</key>
 		<data>
@@ -174,22 +174,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qBtdrYomNz3GwkDC7biciTh3sl8=
+			2glxs5R/xTQ2hkkrkrVVb7YrIgk=
 			</data>
 			<key>hash2</key>
 			<data>
-			otr3r4efCK5ybY+LieXQF4DgK9duAjfxDEkonEwT3n8=
+			IKwvntjnyK7cTWDDcIC0AlE0MQfo5qp7c5ihfygXAWg=
 			</data>
 		</dict>
 		<key>CCPA.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dZRKu+NiraacaOg/RTnlgs/YBos=
+			ujQqirGscza4kX3nt2RWkAZBrGg=
 			</data>
 			<key>hash2</key>
 			<data>
-			THSv0fg9QUUtfQxL//bMMr7SLDpy/Qg+rYDIBYzOYeg=
+			KfaUf4Tah0oKiCjZCS/p85yu46K2mFTdXzsBMAAkvQM=
 			</data>
 		</dict>
 		<key>Headers/ChoiceMobile-Swift.h</key>
@@ -218,66 +218,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/Bmx5YC71IEOiyOt1QrYl5Nn1NI=
+			jJtCLhCTyHYJWRiPx1F9XiZOhzc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3FtISVt+yXEGR6aA9+JBGT39dVTJDgS6j2rtKgDSPv8=
+			D1qxWm+g5WwystY43IsFrNGsMrGSgXyPSg9CNqk7wnM=
 			</data>
 		</dict>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p5PrZ+b2hUuoOghrE4BaVdslZmE=
+			JpiU7p/vGrKeuDHFWZcPGtjQXzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ivql9flYOgeym86mbpmvf9L0MawSBzcckL6U6n5yVHU=
+			RkduitLJyaM4aM3TVyQKDUysUHkt7+U10gsr5pVhGuE=
 			</data>
 		</dict>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			36LnUBnvX/DeTLqtNLMf/5Gw+9U=
+			XCvxRaT0gObdvTPc7o/BduzXYUY=
 			</data>
 			<key>hash2</key>
 			<data>
-			4/xVYAK24ZKODqNXTSVOqL3myPpduA1HlmNIvfM8Ia0=
+			4AHxCz5OUMjdLNNnnmIhIOsBdILW7DZcvTG44NMvAFI=
 			</data>
 		</dict>
 		<key>LegitimateViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rLBfW8tGcWm7Z3IiaVH/3ur8CX4=
+			2e5nxGqzrlcjcEMfUelTb4E0JiQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jp9LaIh+m35NNJVaPVgycrItBVlhL6Rv1k/0F0TMYRE=
+			UhLyTKH+iZ94ioZ4yUnhGPgbZRY7sdxM9t03yUmiIX4=
 			</data>
 		</dict>
 		<key>MainPrivacy.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FMBfq2I6klonir4OgH2QzqejsOw=
+			6keRumAobq7kEnhEFenQHEHob7A=
 			</data>
 			<key>hash2</key>
 			<data>
-			GykjSlkMQ+iMuZmUqhb+M1PHbVHWpEfXaW5ZPxLvxdI=
+			olLKywx4X/hm+AePjQjRvPRkmgTgCNYa4qds+XbBtPw=
 			</data>
 		</dict>
 		<key>MainPrivacy.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P+yJKlzxIsXFyEOmAtDH6f6e7vA=
+			bmz+UrofIkthmLLDrMq7px6jVXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XVeh07GrrhaBAy067PPtPZFbq826Hq5qCCQNgcx35So=
+			wmIYw8xaDjt9xtMtMHUemisFrO0iB+f3JFyDT69AccQ=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/arm.swiftdoc</key>
@@ -460,77 +460,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TtUP2yLl2B+szWRcmXi4GeKd4u0=
+			mIxtYneSLM+gQaUqs1RTdHMVqR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zq5GDLUcWsBYJ+i2ep701tXFbJhvrgjBCDf+mnwkEH8=
+			UXcMT8w2ZRLR/x5AvShQk2YXqbh3rzwahSTskGbU8Qg=
 			</data>
 		</dict>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0T+CxhmmEcQUptL4TFs3QJyaFvc=
+			zSMoTzIRocK09K09v/eMdx/P5/I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hx9s5RpFfYHdN2edDTsIiMqtaFv3d5uBIPlhOJbhWOY=
+			xI89HKFk25/wMoIiTqNreWBFShJ2zdZnTyCbQT0GWOk=
 			</data>
 		</dict>
 		<key>OptionsViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ghBZnyW4ivqJ04ZB/QFYkDUevKU=
+			q12RT756UA+w9a+gh9pkTFnU5Uc=
 			</data>
 			<key>hash2</key>
 			<data>
-			FIzBh6l2OBqZhKhwkPspUkFfYSaplt6JSDjU47hFnek=
+			mvAZulYhhuaGmdVY/r+R3iGREZGrnMFlUf24Q75C43o=
 			</data>
 		</dict>
 		<key>PartnersViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			njtWfqtVxJDHTptCmUuMEUI+DP0=
+			CTibBScjKbBhw1xizUftclhHYqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bylGgLOt+96cQr8X+PtgyysVVVr0cYiTglZGlImknH0=
+			rA2WvSPICOn4SRNkcAf9+TdRdAp0wfM8wg0LXgHNsXI=
 			</data>
 		</dict>
 		<key>PartnersViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cp0C2uVGQyH3tN2mfRju0pYr0+I=
+			ucFXr3dhhlE3MCMyzNFQgk+Gtsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			22AbLJJGFC0ubg6Q6HxeKus1btyqknXxkH/U8b3acIk=
+			+yXGMA7xOD4VOkWEWYUGh1Ut6o+EB1j0fhUx4JB4wE4=
 			</data>
 		</dict>
 		<key>StackDetailViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h1CQo4hXtG7RXdVcVYARDPXXuOY=
+			qig75MznQR9CwlWZsOE+eVM7jMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			0ZmtS46K30qtGoFrGzO/T8ap172589LtSa3mw5OUcnc=
+			YdnoM5vB4A+7coo0r5VY1AhqBoZ/0wYeg/svFFk4Jvw=
 			</data>
 		</dict>
 		<key>StackDetailViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8fQH2bMQ83dejJrsrNWJy2FMMEc=
+			NbbeRODRsUtnZoqCqYLxsnP6cus=
 			</data>
 			<key>hash2</key>
 			<data>
-			EDcIE0I5FYG++ts+T5MkCskSMw7wqD1DWfSMIHWY00o=
+			/4rH11DcueHRqiJIOav8lHCwe53Hpj9Tn/ruKNV16pk=
 			</data>
 		</dict>
 		<key>cmp_text_localized.json</key>
