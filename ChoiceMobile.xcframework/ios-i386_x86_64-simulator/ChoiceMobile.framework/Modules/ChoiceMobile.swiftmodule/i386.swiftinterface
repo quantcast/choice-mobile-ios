@@ -205,8 +205,8 @@ public struct Stack {
 }
 @objc @_inheritsConvenienceInitializers public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
   @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   public static func getInstance() -> ChoiceMobile.CCPAViewController?
   @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
   @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int

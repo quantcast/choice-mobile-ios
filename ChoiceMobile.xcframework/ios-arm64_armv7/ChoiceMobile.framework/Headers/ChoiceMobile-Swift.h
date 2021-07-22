@@ -237,8 +237,8 @@ SWIFT_PROTOCOL("_TtP12ChoiceMobile12CCPADelegate_")
 SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
 @interface CCPAViewController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -386,6 +386,9 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
 
 
 
@@ -638,8 +641,8 @@ SWIFT_PROTOCOL("_TtP12ChoiceMobile12CCPADelegate_")
 SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
 @interface CCPAViewController : UINavigationController <UITableViewDataSource, UITableViewDelegate>
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(BOOL)animated;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -787,6 +790,9 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+
 
 
 
