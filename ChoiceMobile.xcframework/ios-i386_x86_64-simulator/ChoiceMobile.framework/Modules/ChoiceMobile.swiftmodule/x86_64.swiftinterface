@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChoiceMobile
 import AppTrackingTransparency
 @_exported import ChoiceMobile
@@ -11,19 +11,19 @@ import UIKit
   case notAllowed = 0
   case requireConsent = 1
   case requireLegitimateInterest = 2
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 public struct GeoIP : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct MobileUILabels : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public protocol TranslationsProtocol {
   func getTranslations(onComplete: @escaping (ChoiceMobile.Translations?) -> Swift.Void)
@@ -59,29 +59,29 @@ public enum ConsentLanguage : Swift.String, Swift.CaseIterable {
   case SK
   case SL
   case SV
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+  public init?(rawValue: Swift.String)
   public typealias AllCases = [ChoiceMobile.ConsentLanguage]
+  public typealias RawValue = Swift.String
   public static var allCases: [ChoiceMobile.ConsentLanguage] {
     get
   }
-  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public struct NewCoreUILabels : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
-@objc public protocol CCPADelegate : AnyObject {
+@objc public protocol CCPADelegate {
   @objc func didReceiveCCPAConsent(string: Swift.String)
 }
 @objc public enum DisplayStatus : Swift.Int {
   case visible
   case hidden
   case disabled
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -89,27 +89,27 @@ public struct NewCoreUILabels : Swift.Codable {
 public typealias BooleanVector = [Swift.String : Swift.Bool]
 public struct Declarations {
 }
-@objc @_inheritsConvenienceInitializers public class MainPrivacyController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+@objc @_inheritsConvenienceInitializers public class MainPrivacyController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, UIKit.UINavigationBarDelegate {
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   public static func getInstance() -> ChoiceMobile.MainPrivacyController?
+  @objc public func navigationBar(_ navigationBar: UIKit.UINavigationBar, didPop item: UIKit.UINavigationItem)
   @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
   @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
   @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc deinit
   @available(iOS 5.0, *)
   @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
   @objc override dynamic public init(rootViewController: UIKit.UIViewController)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
 }
 public struct Feature : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ChoiceMobile.Feature, b: ChoiceMobile.Feature) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: ChoiceMobile.Feature, b: ChoiceMobile.Feature) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers @objc public class PingResponse : ObjectiveC.NSObject {
   final public let gdprApplies: Swift.Bool?
@@ -128,27 +128,27 @@ public struct Feature : Swift.Hashable {
   @objc final public let cmpId: Swift.Int
   @objc final public let gvlVersion: Swift.Int
   @objc final public let tcfPolicyVersion: Swift.Int
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct Translations : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct NewPremiumUILabels : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
 public struct Purpose : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ChoiceMobile.Purpose, b: ChoiceMobile.Purpose) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: ChoiceMobile.Purpose, b: ChoiceMobile.Purpose) -> Swift.Bool
 }
 public struct PortalConfig : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct VendorList {
 }
@@ -178,8 +178,8 @@ public struct VendorList {
   @objc @_hasMissingDesignatedInitializers public class ConsentAndLI : ObjectiveC.NSObject {
     @objc final public let consents: ChoiceMobile.BooleanVector
     @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
-    @objc deinit
     @objc override dynamic public init()
+    @objc deinit
   }
   @objc @_hasMissingDesignatedInitializers public class Publisher : ObjectiveC.NSObject {
     @objc final public let vendorID: Swift.Int
@@ -187,19 +187,19 @@ public struct VendorList {
     @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
     @objc final public let customPurpose: ChoiceMobile.TCData.ConsentAndLI
     @objc final public let restrictions: ChoiceMobile.Restrictions
-    @objc deinit
     @objc override dynamic public init()
+    @objc deinit
   }
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct DeviceStorageDisclosureList : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct Disclosure : Swift.Codable {
-  public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct Stack {
 }
@@ -213,12 +213,12 @@ public struct Stack {
   @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
   @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
   @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
-  @objc deinit
   @available(iOS 5.0, *)
   @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
   @objc override dynamic public init(rootViewController: UIKit.UIViewController)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GVL {
   public var defaultLanguage: ChoiceMobile.ConsentLanguage
@@ -259,8 +259,8 @@ public protocol GeoIPRepositoryProtocol {
   case tcloaded
   case cmpuishown
   case useractioncomplete
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -270,8 +270,8 @@ public protocol GeoIPRepositoryProtocol {
   case loading
   case loaded
   case error
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -286,7 +286,7 @@ public protocol GeoIPRepositoryProtocol {
 public protocol DeviceStorageDisclosureListRepositoryProtocol {
   func getDeviceStorageDisclosureList(withUrl url: Foundation.URL?, onComplete: @escaping (ChoiceMobile.DeviceStorageDisclosureList) -> Swift.Void, onError: @escaping () -> Swift.Void)
 }
-@objc public protocol ChoiceCmpDelegate : AnyObject {
+@objc public protocol ChoiceCmpDelegate {
   @objc func cmpDidLoad(info: ChoiceMobile.PingResponse)
   @objc func cmpDidShow(info: ChoiceMobile.PingResponse)
   @objc func didReceiveIABVendorConsent(tcData: ChoiceMobile.TCData, updated: Swift.Bool)
