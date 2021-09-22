@@ -255,6 +255,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
 @protocol ChoiceCmpDelegate;
 @class TCData;
 @class NonIABData;
+@class ChoiceGeolocation;
 @class PingResponse;
 
 SWIFT_CLASS("_TtC12ChoiceMobile9ChoiceCmp")
@@ -269,6 +270,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
 - (ACData * _Nullable)getACData SWIFT_WARN_UNUSED_RESULT;
+- (ChoiceGeolocation * _Nullable)getGeolocation SWIFT_WARN_UNUSED_RESULT;
 - (PingResponse * _Nonnull)ping SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -281,6 +283,16 @@ SWIFT_PROTOCOL("_TtP12ChoiceMobile17ChoiceCmpDelegate_")
 - (void)didReceiveNonIABVendorConsentWithNonIabData:(NonIABData * _Nonnull)nonIabData updated:(BOOL)updated;
 - (void)didReceiveAdditionalConsentWithAcData:(ACData * _Nonnull)acData updated:(BOOL)updated;
 - (void)cmpDidErrorWithError:(NSError * _Nonnull)error;
+@end
+
+
+SWIFT_CLASS("_TtC12ChoiceMobile17ChoiceGeolocation")
+@interface ChoiceGeolocation : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull country;
+@property (nonatomic, readonly, copy) NSString * _Nonnull region;
+@property (nonatomic, readonly, copy) NSString * _Nonnull city;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, CmpStatus, open) {
@@ -663,6 +675,7 @@ SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
 @protocol ChoiceCmpDelegate;
 @class TCData;
 @class NonIABData;
+@class ChoiceGeolocation;
 @class PingResponse;
 
 SWIFT_CLASS("_TtC12ChoiceMobile9ChoiceCmp")
@@ -677,6 +690,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
 - (ACData * _Nullable)getACData SWIFT_WARN_UNUSED_RESULT;
+- (ChoiceGeolocation * _Nullable)getGeolocation SWIFT_WARN_UNUSED_RESULT;
 - (PingResponse * _Nonnull)ping SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -689,6 +703,16 @@ SWIFT_PROTOCOL("_TtP12ChoiceMobile17ChoiceCmpDelegate_")
 - (void)didReceiveNonIABVendorConsentWithNonIabData:(NonIABData * _Nonnull)nonIabData updated:(BOOL)updated;
 - (void)didReceiveAdditionalConsentWithAcData:(ACData * _Nonnull)acData updated:(BOOL)updated;
 - (void)cmpDidErrorWithError:(NSError * _Nonnull)error;
+@end
+
+
+SWIFT_CLASS("_TtC12ChoiceMobile17ChoiceGeolocation")
+@interface ChoiceGeolocation : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull country;
+@property (nonatomic, readonly, copy) NSString * _Nonnull region;
+@property (nonatomic, readonly, copy) NSString * _Nonnull city;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, CmpStatus, open) {

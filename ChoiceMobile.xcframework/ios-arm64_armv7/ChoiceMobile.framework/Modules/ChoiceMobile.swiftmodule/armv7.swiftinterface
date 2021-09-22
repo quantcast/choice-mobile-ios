@@ -201,6 +201,11 @@ public struct Disclosure : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers @objc public class ChoiceGeolocation : ObjectiveC.NSObject {
+  @objc final public let country: Swift.String, region: Swift.String, city: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 public struct Stack {
 }
 @objc @_inheritsConvenienceInitializers public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
@@ -245,6 +250,7 @@ public struct Stack {
   @objc public func getTCData() -> ChoiceMobile.TCData?
   @objc public func getNonIABData() -> ChoiceMobile.NonIABData?
   @objc public func getACData() -> ChoiceMobile.ACData?
+  @objc public func getGeolocation() -> ChoiceMobile.ChoiceGeolocation?
   @objc public func ping() -> ChoiceMobile.PingResponse
   @objc deinit
 }
