@@ -10,11 +10,11 @@
 		</data>
 		<key>CCPA.nib/objects-11.0+.nib</key>
 		<data>
-		5RUmf2XQ9SX5rYRvazkS9DKlEVI=
+		jb80+Ag5hiLVNzWk+w7IgYd3J7c=
 		</data>
 		<key>CCPA.nib/runtime.nib</key>
 		<data>
-		s0PkKrltfo2fP/EYM5awM1QPMro=
+		ImjV+jhFHhDLV0vcWCSngtqJI5s=
 		</data>
 		<key>Headers/ChoiceMobile-Swift.h</key>
 		<data>
@@ -30,27 +30,27 @@
 		</data>
 		<key>InformationViewController.nib/objects-11.0+.nib</key>
 		<data>
-		qhrQLoAd2SyKet92n8RBngN4DvQ=
+		/+0g/l59hTOetdCKgg6K2aPTdTI=
 		</data>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<data>
-		fDhlj0vkklP77RjUsKJqV5xvQCY=
+		UJy3rDcT4ztEh6tzbvNkC9i2uWE=
 		</data>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
 		<data>
-		UmKHcQ1Q0wtkOqe8kYtqnNgV9TM=
+		Hby0xyHuiZ1U56jmE3U/0tLobws=
 		</data>
 		<key>LegitimateViewController.nib/runtime.nib</key>
 		<data>
-		uVY266DWEUjsGFHwI/oWr0+16+A=
+		EwuaHWvfgx9ZkTwnQQM3i2+SmE4=
 		</data>
 		<key>MainPrivacy.nib/objects-11.0+.nib</key>
 		<data>
-		wTV3m3/AkpXROU1MBq0hrt2jECY=
+		sQvI2UMOYkB98epbSkAO1jpbMow=
 		</data>
 		<key>MainPrivacy.nib/runtime.nib</key>
 		<data>
-		NVv+Q9t+3x/GGsQpkBwgjAuiFZ8=
+		GSfjAfbhneEbGo2y8azp9Ib18vE=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/mWrCAwzL9Fli1sqvbFZ0P9MEec=
+		+/pvip1s198QRnwnX9DFMEWTpYg=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftmodule</key>
 		<data>
-		/mWrCAwzL9Fli1sqvbFZ0P9MEec=
+		+/pvip1s198QRnwnX9DFMEWTpYg=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hnARk9oQES9+avqsZ5UGFG6FraI=
+		FIW1rnR8TuzQHnmnllWta4irjxI=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		hnARk9oQES9+avqsZ5UGFG6FraI=
+		FIW1rnR8TuzQHnmnllWta4irjxI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,31 +106,31 @@
 		</data>
 		<key>OptionTableViewCell.nib</key>
 		<data>
-		N94UuQ+GAt1DjU4sytHKWYFB9JI=
+		txBM2UcOqPH9GmND0wlhdQvtye0=
 		</data>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>
 		<data>
-		RZD2aEy2awMA3fGXYGv1kANqxjc=
+		9Qdfer3TyRXLkKwDifx/dXWal9M=
 		</data>
 		<key>OptionsViewController.nib/runtime.nib</key>
 		<data>
-		u16q/vjAA1bd830nKmRP9ZG2wBI=
+		xT2uimAmWUwwjf3kIsOlbwF3q+c=
 		</data>
 		<key>PartnersViewController.nib/objects-11.0+.nib</key>
 		<data>
-		E5a+bmAJXypAByN704kO3RLCN0A=
+		GIWpWQNzdmHorbvqGdagUJqojPI=
 		</data>
 		<key>PartnersViewController.nib/runtime.nib</key>
 		<data>
-		rJBKiZ4hTyuq6TMxqKFx2Zkr7Vk=
+		xpLdPov2ytcVz+aAkyUmXh3O1co=
 		</data>
 		<key>StackDetailViewController.nib/objects-11.0+.nib</key>
 		<data>
-		oQbegVq+ZgnRPW7E5fgwbFs/GrI=
+		fgPoX4SJbSpvnYhg7AvwX5rXRlI=
 		</data>
 		<key>StackDetailViewController.nib/runtime.nib</key>
 		<data>
-		cxHY22f8U3Go+gUXaEx2k5lIskY=
+		x48HpLzb1vEftbjWPYED/iPctZA=
 		</data>
 		<key>cmp_text_localized.json</key>
 		<data>
@@ -162,22 +162,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5RUmf2XQ9SX5rYRvazkS9DKlEVI=
+			jb80+Ag5hiLVNzWk+w7IgYd3J7c=
 			</data>
 			<key>hash2</key>
 			<data>
-			nXFCF3B4KhA7QAuqbHkhtQOB54+ULIiWtgY9CtP1psE=
+			YLr3/xRDUr/fGA97e1H0FzfLP/QQOCaFb7A6X3gQi/k=
 			</data>
 		</dict>
 		<key>CCPA.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s0PkKrltfo2fP/EYM5awM1QPMro=
+			ImjV+jhFHhDLV0vcWCSngtqJI5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			6EJtNslYgxS5E4TL+yktRjP+P1Mi9hreWQDyBFbBirE=
+			adn6keUX5nNylNc6KcFdkWgeH85wOICH68B5w/mtDH0=
 			</data>
 		</dict>
 		<key>Headers/ChoiceMobile-Swift.h</key>
@@ -206,66 +206,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qhrQLoAd2SyKet92n8RBngN4DvQ=
+			/+0g/l59hTOetdCKgg6K2aPTdTI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qq8HJUWcPhnmrtCMWbE4MrweKayhXn018YJG1AsRir8=
+			1t0Gp8HJuSHH1o3sXwFffbDUB9VHfBIhvoN2XDM4Ius=
 			</data>
 		</dict>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fDhlj0vkklP77RjUsKJqV5xvQCY=
+			UJy3rDcT4ztEh6tzbvNkC9i2uWE=
 			</data>
 			<key>hash2</key>
 			<data>
-			p+7MKe+UYM3SI836o9GQrAkpEicyjDzg8TY8snW5oD0=
+			jb0zh1obf6IGoEds+g+ov5xVjEUMK2v2ZuWbjCAcmWE=
 			</data>
 		</dict>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UmKHcQ1Q0wtkOqe8kYtqnNgV9TM=
+			Hby0xyHuiZ1U56jmE3U/0tLobws=
 			</data>
 			<key>hash2</key>
 			<data>
-			ksD7vnqk7gmWwty0DxPPHvrDQBsvZcNqfKmmc+7U15Q=
+			+fVF0vaIeD0zF3E+sW21KJD0gvshkY6eqMTtAqwSoPQ=
 			</data>
 		</dict>
 		<key>LegitimateViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uVY266DWEUjsGFHwI/oWr0+16+A=
+			EwuaHWvfgx9ZkTwnQQM3i2+SmE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jHGu1FeVRJh2VKOtY/2c6WaWyy8EhS5wWB9zmkfy+74=
+			3VDz/UMg8dfRErFZzHuY7/kInZloJTwwFoa/0DJuLKs=
 			</data>
 		</dict>
 		<key>MainPrivacy.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wTV3m3/AkpXROU1MBq0hrt2jECY=
+			sQvI2UMOYkB98epbSkAO1jpbMow=
 			</data>
 			<key>hash2</key>
 			<data>
-			wYVqmcOLbBfMknoFL9ixedF+/dD7ujPvE/UzIEeyEXg=
+			XycEyaA4S/EQVm6CMNjuv3j7/VoIhYCk9PFnG4Rh00c=
 			</data>
 		</dict>
 		<key>MainPrivacy.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NVv+Q9t+3x/GGsQpkBwgjAuiFZ8=
+			GSfjAfbhneEbGo2y8azp9Ib18vE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xbuaAmu6J9h+9g8uUWZcA2P2C2mQySHsXBm/AeSgxU0=
+			N9bQg/oi1KEhP3OVqjB8ShjnYVFIEco8c4ZbbIYCtIc=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/mWrCAwzL9Fli1sqvbFZ0P9MEec=
+			+/pvip1s198QRnwnX9DFMEWTpYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPoBuosWV8jjveIsoAbKzsMoQanLdgmTkwAl4H4iOrU=
+			jxVmaywf6oR1A4umcp8iB2k4KBZCbgtG7DPog/XoEQ8=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftdoc</key>
@@ -327,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/mWrCAwzL9Fli1sqvbFZ0P9MEec=
+			+/pvip1s198QRnwnX9DFMEWTpYg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPoBuosWV8jjveIsoAbKzsMoQanLdgmTkwAl4H4iOrU=
+			jxVmaywf6oR1A4umcp8iB2k4KBZCbgtG7DPog/XoEQ8=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -360,11 +360,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hnARk9oQES9+avqsZ5UGFG6FraI=
+			FIW1rnR8TuzQHnmnllWta4irjxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dgt8/0V76XJ+SK5pX7ZJtRj0EWKA94Eb67HcQdgQ+CU=
+			/kcacLZuvhnXJKIReuuM/h6Qjb+N8BWNIunVTJtLqM8=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftdoc</key>
@@ -393,11 +393,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hnARk9oQES9+avqsZ5UGFG6FraI=
+			FIW1rnR8TuzQHnmnllWta4irjxI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dgt8/0V76XJ+SK5pX7ZJtRj0EWKA94Eb67HcQdgQ+CU=
+			/kcacLZuvhnXJKIReuuM/h6Qjb+N8BWNIunVTJtLqM8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -415,77 +415,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N94UuQ+GAt1DjU4sytHKWYFB9JI=
+			txBM2UcOqPH9GmND0wlhdQvtye0=
 			</data>
 			<key>hash2</key>
 			<data>
-			5p12qVJlpECh/dHu6ed9uDTGTatOD1U90OjKspGkhB8=
+			b5hMo5v52puPo9lyv6IWabZiPR10xUw/cJNLnAzBe4g=
 			</data>
 		</dict>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RZD2aEy2awMA3fGXYGv1kANqxjc=
+			9Qdfer3TyRXLkKwDifx/dXWal9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			St8+uDH9t//WnoIsJ0KQt1hEPf1kMVJf+RWDBXzDWfY=
+			2mGlxdcuF03sTOd6BRczgzzIfalLuYmd6a9YaEEHsCA=
 			</data>
 		</dict>
 		<key>OptionsViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u16q/vjAA1bd830nKmRP9ZG2wBI=
+			xT2uimAmWUwwjf3kIsOlbwF3q+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZBEgYQHD8mmE6WG6RlEm7dDxzxBkZGNqVM/FLsRfUPk=
+			4EqUD0btMgowJPP0MGDtxRdWfSevHatvL0+9qGFOpzc=
 			</data>
 		</dict>
 		<key>PartnersViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E5a+bmAJXypAByN704kO3RLCN0A=
+			GIWpWQNzdmHorbvqGdagUJqojPI=
 			</data>
 			<key>hash2</key>
 			<data>
-			hzOYrmbcsx9nv336Y11T7MwT4tvktSX5HcF7+FIBWz0=
+			I/iVE/XfNmpAlmUfFvWwoBHm7qqXnI8ya0nmEe2kLwE=
 			</data>
 		</dict>
 		<key>PartnersViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rJBKiZ4hTyuq6TMxqKFx2Zkr7Vk=
+			xpLdPov2ytcVz+aAkyUmXh3O1co=
 			</data>
 			<key>hash2</key>
 			<data>
-			bSVBdHrEH/byh/e8fXgg3c0u7ZiJ2cNr5k1XWOJKa0s=
+			QOEiv+g/9eoubivg+N3nkau7FhEyUwWqxfTmMpmOgYI=
 			</data>
 		</dict>
 		<key>StackDetailViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oQbegVq+ZgnRPW7E5fgwbFs/GrI=
+			fgPoX4SJbSpvnYhg7AvwX5rXRlI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nQTWbTO90nm80lga6qk8OWwr6TNy86VjfwyCD2S3bOw=
+			GXmgs7cckqy0dmeUPdll3ahEUizekK9AL+ZnrGUZV9U=
 			</data>
 		</dict>
 		<key>StackDetailViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cxHY22f8U3Go+gUXaEx2k5lIskY=
+			x48HpLzb1vEftbjWPYED/iPctZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			z9hZTwUk4a5Ct2m3X5CmpDolh10hD0vRoYHuqtBdX2c=
+			94n1M7fSeSGaiOqLUbEnZnNdHIyujQT4bM4TZ0AkJaM=
 			</data>
 		</dict>
 		<key>cmp_text_localized.json</key>
