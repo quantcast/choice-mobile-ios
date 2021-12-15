@@ -17,6 +17,9 @@ import UIKit
     get
   }
 }
+extension UILabel {
+  @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+}
 public struct GeoIP : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws

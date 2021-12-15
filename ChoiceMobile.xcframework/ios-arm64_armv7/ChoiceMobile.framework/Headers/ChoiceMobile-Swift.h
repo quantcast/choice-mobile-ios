@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -406,6 +407,11 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 
 
 
+@class UIEvent;
+
+@interface UILabel (SWIFT_EXTENSION(ChoiceMobile))
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
@@ -610,6 +616,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -826,6 +833,11 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 
 
 
+@class UIEvent;
+
+@interface UILabel (SWIFT_EXTENSION(ChoiceMobile))
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 
