@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChoiceMobile
 import AppTrackingTransparency
 @_exported import ChoiceMobile
@@ -7,6 +7,7 @@ import CommonCrypto
 import Foundation
 import Swift
 import UIKit
+import _Concurrency
 @objc public enum RestrictionType : Swift.Int {
   case notAllowed = 0
   case requireConsent = 1
@@ -17,8 +18,8 @@ import UIKit
     get
   }
 }
-extension UILabel {
-  @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
 }
 public struct GeoIP : Swift.Codable {
   public func encode(to encoder: Swift.Encoder) throws
@@ -92,19 +93,19 @@ public struct NewCoreUILabels : Swift.Codable {
 public typealias BooleanVector = [Swift.String : Swift.Bool]
 public struct Declarations {
 }
-@objc @_inheritsConvenienceInitializers public class MainPrivacyController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, UIKit.UINavigationBarDelegate {
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  public static func getInstance() -> ChoiceMobile.MainPrivacyController?
-  @objc public func navigationBar(_ navigationBar: UIKit.UINavigationBar, didPop item: UIKit.UINavigationItem)
-  @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
-  @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MainPrivacyController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, UIKit.UINavigationBarDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func getInstance() -> ChoiceMobile.MainPrivacyController?
+  @_Concurrency.MainActor(unsafe) @objc public func navigationBar(_ navigationBar: UIKit.UINavigationBar, didPop item: UIKit.UINavigationItem)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
   @available(iOS 5.0, *)
-  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
-  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 public struct Feature : Swift.Hashable {
@@ -131,7 +132,6 @@ public struct Feature : Swift.Hashable {
   @objc final public let cmpId: Swift.Int
   @objc final public let gvlVersion: Swift.Int
   @objc final public let tcfPolicyVersion: Swift.Int
-  @objc override dynamic public init()
   @objc deinit
 }
 public struct Translations : Swift.Codable {
@@ -181,7 +181,6 @@ public struct VendorList {
   @objc @_hasMissingDesignatedInitializers public class ConsentAndLI : ObjectiveC.NSObject {
     @objc final public let consents: ChoiceMobile.BooleanVector
     @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
-    @objc override dynamic public init()
     @objc deinit
   }
   @objc @_hasMissingDesignatedInitializers public class Publisher : ObjectiveC.NSObject {
@@ -190,10 +189,8 @@ public struct VendorList {
     @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
     @objc final public let customPurpose: ChoiceMobile.TCData.ConsentAndLI
     @objc final public let restrictions: ChoiceMobile.Restrictions
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 public struct DeviceStorageDisclosureList : Swift.Codable {
@@ -206,26 +203,25 @@ public struct Disclosure : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers @objc public class ChoiceGeolocation : ObjectiveC.NSObject {
   @objc final public let country: Swift.String, region: Swift.String, city: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 public struct Stack {
 }
-@objc @_inheritsConvenienceInitializers public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  public static func getInstance() -> ChoiceMobile.CCPAViewController?
-  @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
-  @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
-  @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
-  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
-  @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func getInstance() -> ChoiceMobile.CCPAViewController?
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
   @available(iOS 5.0, *)
-  @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
-  @objc override dynamic public init(rootViewController: UIKit.UIViewController)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GVL {
@@ -257,7 +253,7 @@ public struct Stack {
   @objc public func ping() -> ChoiceMobile.PingResponse
   @objc deinit
 }
-extension Date {
+extension Foundation.Date {
   public static func daysBetween(start: Foundation.Date, end: Foundation.Date) -> Swift.Int
   public static func hoursBetween(start: Foundation.Date, end: Foundation.Date) -> Swift.Int
 }
