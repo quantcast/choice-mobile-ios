@@ -7,6 +7,7 @@ import CommonCrypto
 import Foundation
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 @objc public enum RestrictionType : Swift.Int {
   case notAllowed = 0
@@ -245,7 +246,10 @@ public struct Stack {
   @objc public func startCCPA()
   @objc public func startChoice(pcode: Swift.String, delegate: ChoiceMobile.ChoiceCmpDelegate, ccpaDelegate: ChoiceMobile.CCPADelegate? = nil, shouldDisplayIDFA: Swift.Bool = true)
   @objc public func forceDisplayUI()
+  @objc public func startChoiceFromWeb()
   public func getVendorList() -> ChoiceMobile.GVL?
+  @objc public func getReprompHash() -> Swift.String?
+  @objc public func getTCString() -> Swift.String?
   @objc public func getTCData() -> ChoiceMobile.TCData?
   @objc public func getNonIABData() -> ChoiceMobile.NonIABData?
   @objc public func getACData() -> ChoiceMobile.ACData?

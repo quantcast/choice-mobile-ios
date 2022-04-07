@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/ChoiceMobile-Swift.h</key>
 		<data>
-		WfaWIf71s7QPGzRvq+PtPlNHqHo=
+		WCleoDrRLnLFSrSYsXnx0j1IFR0=
 		</data>
 		<key>Headers/ChoiceMobile.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yX6oaz4iuKLd41D9elHU1BouMeo=
+		RXhhXnxZZW1nKpxxWgLAaYxZ7WU=
 		</data>
 		<key>InformationViewController.nib/objects-11.0+.nib</key>
 		<data>
-		i89M4cEyvs6jKC2sLGbIyRymHxk=
+		HYdRmWwjNRjxEOyOnKSHv6+2z4g=
 		</data>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<data>
-		YbXR5Gum2T3zWv1LVcsCbvQxNH4=
+		XIJEcUypVF5xA0cFcED8WZcgJcA=
 		</data>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SEY8NoApnAbH+7BDSjJejZs9Pa4=
+		lKo+Bt2vSmFjIMO7AsoqpZa5z3A=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5xLAUoeUEbhiGvRzLa7KDSb9hVU=
+		foel0Fk4dcyh7GFOn4koTuKDp48=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftinterface</key>
 		<data>
-		SEY8NoApnAbH+7BDSjJejZs9Pa4=
+		lKo+Bt2vSmFjIMO7AsoqpZa5z3A=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftmodule</key>
 		<data>
-		5xLAUoeUEbhiGvRzLa7KDSb9hVU=
+		foel0Fk4dcyh7GFOn4koTuKDp48=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -82,11 +82,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YSh8gwTYjUgPsMy9MyeDQclfC1I=
+		DpA202jnscHXeKpWzzdXhrPEeg0=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5+DF5L93g27TUmPk1Tz34qawzaI=
+		d/e911ns0OIu6YEPw5hYCGSM1Ds=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		YSh8gwTYjUgPsMy9MyeDQclfC1I=
+		DpA202jnscHXeKpWzzdXhrPEeg0=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		5+DF5L93g27TUmPk1Tz34qawzaI=
+		d/e911ns0OIu6YEPw5hYCGSM1Ds=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>OptionTableViewCell.nib</key>
 		<data>
-		jCYtMAK3MoF149gIH7KSB/abUAE=
+		J2d1c8nhBmloYBS42DRTHBV5aeE=
 		</data>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WfaWIf71s7QPGzRvq+PtPlNHqHo=
+			WCleoDrRLnLFSrSYsXnx0j1IFR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			J438IEI3bmd6tzEovBd3oGA/J+UrGBEUFGdV88pFGlE=
+			WeI500sGmwU8seX7imqKpR6+tXEMl4Y6xg7CfrFRwmk=
 			</data>
 		</dict>
 		<key>Headers/ChoiceMobile.h</key>
@@ -206,22 +206,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			i89M4cEyvs6jKC2sLGbIyRymHxk=
+			HYdRmWwjNRjxEOyOnKSHv6+2z4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			4+CBDJ2UYU3AT80jHvcSVuDV31efK9bsZD4cMGEs9rk=
+			2wuBsWYTHBeqyWU/5GTIO5HESdztOZ8w/ZqBYKQ1dG0=
 			</data>
 		</dict>
 		<key>InformationViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YbXR5Gum2T3zWv1LVcsCbvQxNH4=
+			XIJEcUypVF5xA0cFcED8WZcgJcA=
 			</data>
 			<key>hash2</key>
 			<data>
-			yelv6ScoyOzhy8ZIjvSr8YusY3a4Fiem2MGgb+AKeSw=
+			hyqbsW9DtqyYpHnAP6mNY9LeYq1EeUjvtYpqwdjgiFw=
 			</data>
 		</dict>
 		<key>LegitimateViewController.nib/objects-11.0+.nib</key>
@@ -283,22 +283,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SEY8NoApnAbH+7BDSjJejZs9Pa4=
+			lKo+Bt2vSmFjIMO7AsoqpZa5z3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			yC6cMQmbqgPWkRTUeZXMHpX6mw3aHqF/LrtSUXxVHTw=
+			WONJ1sg22Te8/nHIj1SWyRasl4mYkDAF5zQN9c3qeIw=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5xLAUoeUEbhiGvRzLa7KDSb9hVU=
+			foel0Fk4dcyh7GFOn4koTuKDp48=
 			</data>
 			<key>hash2</key>
 			<data>
-			m7Wm32n091atzuEStSuOf0u+GkIR9cES3Wui0D7UKL8=
+			/0xnA5tAg0dDgFv2r8WE/LiCAXjg2UZpd7dCHYUzJSU=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftdoc</key>
@@ -316,22 +316,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SEY8NoApnAbH+7BDSjJejZs9Pa4=
+			lKo+Bt2vSmFjIMO7AsoqpZa5z3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			yC6cMQmbqgPWkRTUeZXMHpX6mw3aHqF/LrtSUXxVHTw=
+			WONJ1sg22Te8/nHIj1SWyRasl4mYkDAF5zQN9c3qeIw=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5xLAUoeUEbhiGvRzLa7KDSb9hVU=
+			foel0Fk4dcyh7GFOn4koTuKDp48=
 			</data>
 			<key>hash2</key>
 			<data>
-			m7Wm32n091atzuEStSuOf0u+GkIR9cES3Wui0D7UKL8=
+			/0xnA5tAg0dDgFv2r8WE/LiCAXjg2UZpd7dCHYUzJSU=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -349,22 +349,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YSh8gwTYjUgPsMy9MyeDQclfC1I=
+			DpA202jnscHXeKpWzzdXhrPEeg0=
 			</data>
 			<key>hash2</key>
 			<data>
-			+pYCZNCveJJCnosmDMTBGBOTCsEh5g6nCvlNOo9P6C0=
+			LnurVLpahfnB8cMhHZmKV4K5p965pI8HvbItIpEphJ8=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5+DF5L93g27TUmPk1Tz34qawzaI=
+			d/e911ns0OIu6YEPw5hYCGSM1Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			KbVmtoK8fcA2xfloRcsuNclvZvoPrEGHduqge7frSDc=
+			nlvKdu4l61cS3B5T30fM55ZO44SnXw601D/VUO4TE00=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftdoc</key>
@@ -382,22 +382,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YSh8gwTYjUgPsMy9MyeDQclfC1I=
+			DpA202jnscHXeKpWzzdXhrPEeg0=
 			</data>
 			<key>hash2</key>
 			<data>
-			+pYCZNCveJJCnosmDMTBGBOTCsEh5g6nCvlNOo9P6C0=
+			LnurVLpahfnB8cMhHZmKV4K5p965pI8HvbItIpEphJ8=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5+DF5L93g27TUmPk1Tz34qawzaI=
+			d/e911ns0OIu6YEPw5hYCGSM1Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			KbVmtoK8fcA2xfloRcsuNclvZvoPrEGHduqge7frSDc=
+			nlvKdu4l61cS3B5T30fM55ZO44SnXw601D/VUO4TE00=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -415,11 +415,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jCYtMAK3MoF149gIH7KSB/abUAE=
+			J2d1c8nhBmloYBS42DRTHBV5aeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2dBQcJD1+hfOyEZZVR3OKTYimLAhsPuW2Di0txl+Dls=
+			xcbB4rnFCxwH4ZMiSoNkgNMxIzTTlUaAM9MnFQNre9E=
 			</data>
 		</dict>
 		<key>OptionsViewController.nib/objects-11.0+.nib</key>

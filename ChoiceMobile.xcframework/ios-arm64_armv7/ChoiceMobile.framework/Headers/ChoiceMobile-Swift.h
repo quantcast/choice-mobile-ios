@@ -268,12 +268,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 - (void)startCCPA;
 - (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate ccpaDelegate:(id <CCPADelegate> _Nullable)ccpaDelegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
+- (void)startChoiceFromWeb;
+- (NSString * _Nullable)getReprompHash SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getTCString SWIFT_WARN_UNUSED_RESULT;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
 - (ACData * _Nullable)getACData SWIFT_WARN_UNUSED_RESULT;
 - (ChoiceGeolocation * _Nullable)getGeolocation SWIFT_WARN_UNUSED_RESULT;
 - (PingResponse * _Nonnull)ping SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP12ChoiceMobile17ChoiceCmpDelegate_")
@@ -412,6 +416,8 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 @interface UILabel (SWIFT_EXTENSION(ChoiceMobile))
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
@@ -694,12 +700,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 - (void)startCCPA;
 - (void)startChoiceWithPcode:(NSString * _Nonnull)pcode delegate:(id <ChoiceCmpDelegate> _Nonnull)delegate ccpaDelegate:(id <CCPADelegate> _Nullable)ccpaDelegate shouldDisplayIDFA:(BOOL)shouldDisplayIDFA;
 - (void)forceDisplayUI;
+- (void)startChoiceFromWeb;
+- (NSString * _Nullable)getReprompHash SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getTCString SWIFT_WARN_UNUSED_RESULT;
 - (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
 - (ACData * _Nullable)getACData SWIFT_WARN_UNUSED_RESULT;
 - (ChoiceGeolocation * _Nullable)getGeolocation SWIFT_WARN_UNUSED_RESULT;
 - (PingResponse * _Nonnull)ping SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 SWIFT_PROTOCOL("_TtP12ChoiceMobile17ChoiceCmpDelegate_")
@@ -838,6 +848,8 @@ SWIFT_CLASS("_TtC12ChoiceMobile6TCData")
 @interface UILabel (SWIFT_EXTENSION(ChoiceMobile))
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
 @end
+
+
 
 
 
