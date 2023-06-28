@@ -1,0 +1,325 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ChoiceMobile
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AppTrackingTransparency
+@_exported import ChoiceMobile
+import CommonCrypto
+import Foundation
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc public enum RestrictionType : Swift.Int {
+  case notAllowed = 0
+  case requireConsent = 1
+  case requireLegitimateInterest = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+}
+public struct GeoIP : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MobileUILabels : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol TranslationsProtocol {
+  func getTranslations(onComplete: @escaping (ChoiceMobile.Translations?) -> Swift.Void)
+}
+public protocol TranslationsChainProtocol {
+  init(url: Foundation.URL, next: (any ChoiceMobile.TranslationsChainProtocol)?)
+  func getTranslations(onComplete: @escaping (ChoiceMobile.Translations?) -> Swift.Void)
+}
+public typealias Restrictions = [Swift.Int : [Swift.Int : Swift.Int]]
+public enum ConsentLanguage : Swift.String, Swift.CaseIterable {
+  case BG
+  case CS
+  case DA
+  case DE
+  case EL
+  case EN
+  case ES
+  case ET
+  case FI
+  case FR
+  case HR
+  case HU
+  case IT
+  case LT
+  case LV
+  case MT
+  case NL
+  case NO
+  case PL
+  case PT
+  case RO
+  case RU
+  case SK
+  case SL
+  case SV
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [ChoiceMobile.ConsentLanguage]
+  public typealias RawValue = Swift.String
+  public static var allCases: [ChoiceMobile.ConsentLanguage] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct NewCoreUILabels : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol CCPADelegate {
+  @objc func didReceiveCCPAConsent(string: Swift.String)
+}
+@objc public enum DisplayStatus : Swift.Int {
+  case visible
+  case hidden
+  case disabled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias BooleanVector = [Swift.String : Swift.Bool]
+public struct Declarations {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MainPrivacyController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, UIKit.UINavigationBarDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func getInstance() -> ChoiceMobile.MainPrivacyController?
+  @_Concurrency.MainActor(unsafe) @objc public func navigationBar(_ navigationBar: UIKit.UINavigationBar, didPop item: UIKit.UINavigationItem)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct Feature : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ChoiceMobile.Feature, b: ChoiceMobile.Feature) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class PingResponse : ObjectiveC.NSObject {
+  final public let gdprApplies: Swift.Bool?
+  @objc public var gdprAppliesIsKnown: Swift.Bool {
+    @objc get
+  }
+  @available(*, unavailable)
+  @objc public var doesGdprApply: Swift.Bool {
+    @objc get
+  }
+  @objc final public let cmpLoaded: Swift.Bool
+  @objc final public let cmpStatus: ChoiceMobile.CmpStatus
+  @objc final public let displayStatus: ChoiceMobile.DisplayStatus
+  @objc final public let apiVersion: Swift.String
+  @objc final public let cmpVersion: Swift.Int
+  @objc final public let cmpId: Swift.Int
+  @objc final public let gvlVersion: Swift.Int
+  @objc final public let tcfPolicyVersion: Swift.Int
+  @objc deinit
+}
+public struct Translations : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NewPremiumUILabels : Swift.Codable {
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Purpose : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ChoiceMobile.Purpose, b: ChoiceMobile.Purpose) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct PortalConfig : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VendorList {
+}
+@_hasMissingDesignatedInitializers @objc public class TCData : ObjectiveC.NSObject {
+  @objc public var tcString: Swift.String
+  @objc final public let tcfPolicyVersion: Swift.Int
+  @objc public var cmpId: Swift.Int
+  @objc public var cmpVersion: Swift.Int
+  public var gdprApplies: Swift.Bool?
+  @objc public var gdprAppliesIsKnown: Swift.Bool {
+    @objc get
+  }
+  @available(swift, obsoleted: 0.1)
+  @objc public var doesGdprApply: Swift.Bool {
+    @objc get
+  }
+  @objc public var eventStatus: ChoiceMobile.EventStatus
+  @objc public var cmpStatus: ChoiceMobile.CmpStatus
+  @objc public var isServiceSpecific: Swift.Bool
+  @objc public var useNonStandardStacks: Swift.Bool
+  @objc public var publisherCC: Swift.String
+  @objc public var purposeOneTreatment: Swift.Bool
+  @objc public var purpose: ChoiceMobile.TCData.ConsentAndLI
+  @objc public var vendor: ChoiceMobile.TCData.ConsentAndLI
+  @objc public var specialFeatureOptins: ChoiceMobile.BooleanVector
+  @objc public var publisher: ChoiceMobile.TCData.Publisher
+  @objc @_hasMissingDesignatedInitializers public class ConsentAndLI : ObjectiveC.NSObject {
+    @objc final public let consents: ChoiceMobile.BooleanVector
+    @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
+    @objc deinit
+  }
+  @objc @_hasMissingDesignatedInitializers public class Publisher : ObjectiveC.NSObject {
+    @objc final public let vendorID: Swift.Int
+    @objc final public let consents: ChoiceMobile.BooleanVector
+    @objc final public let legitimateInterests: ChoiceMobile.BooleanVector
+    @objc final public let customPurpose: ChoiceMobile.TCData.ConsentAndLI
+    @objc final public let restrictions: ChoiceMobile.Restrictions
+    @objc deinit
+  }
+  @objc deinit
+}
+public struct DeviceStorageDisclosureList : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Disclosure : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class ChoiceGeolocation : ObjectiveC.NSObject {
+  @objc final public let country: Swift.String, region: Swift.String, city: Swift.String
+  @objc deinit
+}
+public struct Stack {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CCPAViewController : UIKit.UINavigationController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func getInstance() -> ChoiceMobile.CCPAViewController?
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class GVL {
+  public var defaultLanguage: ChoiceMobile.ConsentLanguage
+  public static var consentLanguages: [Swift.String] {
+    get
+  }
+  public func constructor(versionOrVendorList: Any)
+  public func populate(by declarations: ChoiceMobile.Declarations)
+  public func populate(by vendorList: ChoiceMobile.VendorList)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ACData : ObjectiveC.NSObject {
+  @objc final public let gdprApplies: Swift.Bool
+  @objc final public let acString: Swift.String
+  @objc final public let additionalVendorConsent: [Swift.Int : Swift.Bool]
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChoiceCmp : ObjectiveC.NSObject {
+  @objc public static let shared: ChoiceMobile.ChoiceCmp
+  @objc public func startCCPA(pcode: Swift.String, ccpaDelegate: (any ChoiceMobile.CCPADelegate)? = nil)
+  @objc public func startChoice(pcode: Swift.String, delegate: any ChoiceMobile.ChoiceCmpDelegate, ccpaDelegate: (any ChoiceMobile.CCPADelegate)? = nil, shouldDisplayIDFA: Swift.Bool = true)
+  @objc public func forceDisplayUI()
+  @objc public func startChoiceFromWeb()
+  public func getVendorList() -> ChoiceMobile.GVL?
+  @objc public func getReprompHash() -> Swift.String?
+  @objc public func getTCString() -> Swift.String?
+  @objc public func getTCData() -> ChoiceMobile.TCData?
+  @objc public func getNonIABData() -> ChoiceMobile.NonIABData?
+  @objc public func getACData() -> ChoiceMobile.ACData?
+  @objc public func getGeolocation() -> ChoiceMobile.ChoiceGeolocation?
+  @objc public func ping() -> ChoiceMobile.PingResponse
+  @objc deinit
+}
+extension Foundation.Date {
+  public static func daysBetween(start: Foundation.Date, end: Foundation.Date) -> Swift.Int
+  public static func hoursBetween(start: Foundation.Date, end: Foundation.Date) -> Swift.Int
+}
+public protocol GeoIPRepositoryProtocol {
+  func getGeoIP(onComplete: @escaping (ChoiceMobile.GeoIP?) -> Swift.Void)
+}
+@objc public enum EventStatus : Swift.Int {
+  case tcloaded
+  case cmpuishown
+  case useractioncomplete
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CmpStatus : Swift.Int {
+  case stub
+  case loading
+  case loaded
+  case error
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NonIABData : ObjectiveC.NSObject {
+  @objc final public let gdprApplies: Swift.Bool
+  @objc final public let nonIabVendorConsents: [Swift.Int : Swift.Bool]
+  @objc final public let consent: Swift.String
+  public init(gdprApplies: Swift.Bool, hasGlobalConsent: Swift.Bool, hasGlobalScope: Swift.Bool, metadata: Swift.String, nonIabVendorConsents: [Swift.Int : Swift.Bool], consent: Swift.String)
+  @objc deinit
+}
+public protocol DeviceStorageDisclosureListRepositoryProtocol {
+  func getDeviceStorageDisclosureList(withUrl url: Foundation.URL?, onComplete: @escaping (ChoiceMobile.DeviceStorageDisclosureList) -> Swift.Void, onError: @escaping () -> Swift.Void)
+}
+@objc public protocol ChoiceCmpDelegate {
+  @objc func cmpDidLoad(info: ChoiceMobile.PingResponse)
+  @objc func cmpDidShow(info: ChoiceMobile.PingResponse)
+  @objc func didReceiveIABVendorConsent(tcData: ChoiceMobile.TCData, updated: Swift.Bool)
+  @objc func didReceiveNonIABVendorConsent(nonIabData: ChoiceMobile.NonIABData, updated: Swift.Bool)
+  @objc func didReceiveAdditionalConsent(acData: ChoiceMobile.ACData, updated: Swift.Bool)
+  @objc func cmpDidError(error: any Swift.Error)
+}
+public protocol GVLRepositoryProtocol {
+  func getGVL(onComplete: @escaping (ChoiceMobile.GVL) -> Swift.Void)
+}
+extension ChoiceMobile.RestrictionType : Swift.Equatable {}
+extension ChoiceMobile.RestrictionType : Swift.Hashable {}
+extension ChoiceMobile.RestrictionType : Swift.RawRepresentable {}
+extension ChoiceMobile.ConsentLanguage : Swift.Equatable {}
+extension ChoiceMobile.ConsentLanguage : Swift.Hashable {}
+extension ChoiceMobile.ConsentLanguage : Swift.RawRepresentable {}
+extension ChoiceMobile.DisplayStatus : Swift.Equatable {}
+extension ChoiceMobile.DisplayStatus : Swift.Hashable {}
+extension ChoiceMobile.DisplayStatus : Swift.RawRepresentable {}
+extension ChoiceMobile.EventStatus : Swift.Equatable {}
+extension ChoiceMobile.EventStatus : Swift.Hashable {}
+extension ChoiceMobile.EventStatus : Swift.RawRepresentable {}
+extension ChoiceMobile.CmpStatus : Swift.Equatable {}
+extension ChoiceMobile.CmpStatus : Swift.Hashable {}
+extension ChoiceMobile.CmpStatus : Swift.RawRepresentable {}
