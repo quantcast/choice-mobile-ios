@@ -228,6 +228,7 @@ public struct Stack {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GVL {
+  final public let defaultBaseUrl: Swift.String
   public var defaultLanguage: ChoiceMobile.ConsentLanguage
   public static var consentLanguages: [Swift.String] {
     get
