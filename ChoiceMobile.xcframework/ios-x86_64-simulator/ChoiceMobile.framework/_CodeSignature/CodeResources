@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ChoiceMobile-Swift.h</key>
 		<data>
-		/Xfd9ICawfmW4T7L08DzqonRo0k=
+		nTif6LQRnVPLRfpqZgJpqraXRQU=
 		</data>
 		<key>Headers/ChoiceMobile.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6Wk9tpEbtsKFiBqYRV0sVw2eJvI=
+		iFCgm0rTz4ITMg4WR1b6nzfWI58=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qDyPK+j5d9MvQACt+394yKeJDMk=
+		q5Dz4vxvKcftyDM60Q/1/MA7NRs=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qDyPK+j5d9MvQACt+394yKeJDMk=
+		q5Dz4vxvKcftyDM60Q/1/MA7NRs=
 		</data>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LIs39RFS2KVeh2M08WroM9IEfN0=
+		iOcyb5ipNhVxCT47naqRURgCn4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,7 +86,11 @@
 		</data>
 		<key>vendor-list.json</key>
 		<data>
-		e6CyKYY5cr+TXxVjjrZibGbeWMw=
+		rQYHPL8unmpbKLpQcUCL5+sngl8=
+		</data>
+		<key>vendor-list3.json</key>
+		<data>
+		iTBvbBDRBhvfiRZnGEClklrLErw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -109,7 +113,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MUF+jdzUuzlpOHjNvbPzzfWx2Lmb/Jjdb6so/5ibRGw=
+			aCUJTXy2xE9bvbOgQAmQaMq+hDiiQs/TelWCxrTNIf0=
 			</data>
 		</dict>
 		<key>Headers/ChoiceMobile.h</key>
@@ -144,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AHH7mifhcrv7pzXfJO1EZgHfJcOT+H8nae1VdUkMoA=
+			ztomQfHZmDbPzBHCKF3ptZbMOl8YQanhekiqRLBHxPc=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QynmP1syocfJ5qN/TQ0swBFwvl1VyQgvemuRWTEFkNs=
+			RMkzwXeUt6zyh+U/uSE32sNL21hjxfH7JhHYX+oTrIM=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -165,14 +169,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QynmP1syocfJ5qN/TQ0swBFwvl1VyQgvemuRWTEFkNs=
+			RMkzwXeUt6zyh+U/uSE32sNL21hjxfH7JhHYX+oTrIM=
 			</data>
 		</dict>
 		<key>Modules/ChoiceMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8aZn21wzen9C3bd1vP9ZYiOk4xpHuEQDyUeJrd3ETDM=
+			KlyvgGFSCuLDI4Lxo84egnvYX1EG388qFu7nEl96eW8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -228,7 +232,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zxm9cW0dTes636vOnVHm/Tmj3hlSNnSg1HeE0obhOtc=
+			cpo/oUokZ2otm2co0lpRD7kNAfXYVUlPFOdnfWD4boc=
+			</data>
+		</dict>
+		<key>vendor-list3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kmliLRV8CTIZBgItOxIRzFjlrEWsppEKE7ZFqCJefHk=
 			</data>
 		</dict>
 	</dict>

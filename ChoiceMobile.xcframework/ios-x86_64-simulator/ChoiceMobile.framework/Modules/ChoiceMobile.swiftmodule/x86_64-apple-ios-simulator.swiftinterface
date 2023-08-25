@@ -29,8 +29,9 @@ public struct GeoIP : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct MobileUILabels : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+  public init(doneLabel: Swift.String, searchLabel: Swift.String, cancelLabel: Swift.String, showVendorsLabel: Swift.String, showIabLabel: Swift.String, consentLabel: Swift.String, flexPurposesLabel: Swift.String, cookieAccessBodyText: Swift.String, noneLabel: Swift.String, someLabel: Swift.String, allLabel: Swift.String, allVendorsLabel: Swift.String, summaryScreenBodyRejectService: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol TranslationsProtocol {
   func getTranslations(onComplete: @escaping (ChoiceMobile.Translations?) -> Swift.Void)
@@ -253,7 +254,6 @@ public struct Stack {
   public func getVendorList() -> ChoiceMobile.GVL?
   @objc public func getReprompHash() -> Swift.String?
   @objc public func getTCString() -> Swift.String?
-  @objc public func getTCData() -> ChoiceMobile.TCData?
   @objc public func getNonIABData() -> ChoiceMobile.NonIABData?
   @objc public func getACData() -> ChoiceMobile.ACData?
   @objc public func getGeolocation() -> ChoiceMobile.ChoiceGeolocation?
@@ -307,7 +307,7 @@ public protocol DeviceStorageDisclosureListRepositoryProtocol {
   @objc func cmpDidError(error: any Swift.Error)
 }
 public protocol GVLRepositoryProtocol {
-  func getGVL(onComplete: @escaping (ChoiceMobile.GVL) -> Swift.Void)
+  func getGVL(version: Swift.Int, onComplete: @escaping (ChoiceMobile.GVL) -> Swift.Void)
 }
 extension ChoiceMobile.RestrictionType : Swift.Equatable {}
 extension ChoiceMobile.RestrictionType : Swift.Hashable {}

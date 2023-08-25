@@ -326,7 +326,6 @@ SWIFT_CLASS("_TtC12ChoiceMobile18CCPAViewController")
 @end
 
 @protocol ChoiceCmpDelegate;
-@class TCData;
 @class NonIABData;
 @class ChoiceGeolocation;
 @class PingResponse;
@@ -343,7 +342,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 - (void)startChoiceFromWeb;
 - (NSString * _Nullable)getReprompHash SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getTCString SWIFT_WARN_UNUSED_RESULT;
-- (TCData * _Nullable)getTCData SWIFT_WARN_UNUSED_RESULT;
 - (NonIABData * _Nullable)getNonIABData SWIFT_WARN_UNUSED_RESULT;
 - (ACData * _Nullable)getACData SWIFT_WARN_UNUSED_RESULT;
 - (ChoiceGeolocation * _Nullable)getGeolocation SWIFT_WARN_UNUSED_RESULT;
@@ -351,6 +349,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChoiceCmp * 
 @end
 
 
+@class TCData;
 
 SWIFT_PROTOCOL("_TtP12ChoiceMobile17ChoiceCmpDelegate_")
 @protocol ChoiceCmpDelegate

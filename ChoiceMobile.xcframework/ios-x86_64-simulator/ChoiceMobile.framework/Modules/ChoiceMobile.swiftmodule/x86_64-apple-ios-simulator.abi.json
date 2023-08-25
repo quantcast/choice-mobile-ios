@@ -564,8 +564,109 @@
             "usr": "s:12ChoiceMobile0B8UILabelsV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s12ChoiceMobile0B8UILabelsV4fromACs7Decoder_p_tKcfc",
             "moduleName": "ChoiceMobile",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(doneLabel:searchLabel:cancelLabel:showVendorsLabel:showIabLabel:consentLabel:flexPurposesLabel:cookieAccessBodyText:noneLabel:someLabel:allLabel:allVendorsLabel:summaryScreenBodyRejectService:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MobileUILabels",
+                "printedName": "ChoiceMobile.MobileUILabels",
+                "usr": "s:12ChoiceMobile0B8UILabelsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12ChoiceMobile0B8UILabelsV9doneLabel06searchE006cancelE0011showVendorsE00h3IabE007consentE0012flexPurposesE020cookieAccessBodyText04noneE004someE003allE00tiE0013summaryScreenP13RejectServiceACSS_S12Stcfc",
+            "mangledName": "$s12ChoiceMobile0B8UILabelsV9doneLabel06searchE006cancelE0011showVendorsE00h3IabE007consentE0012flexPurposesE020cookieAccessBodyText04noneE004someE003allE00tiE0013summaryScreenP13RejectServiceACSS_S12Stcfc",
+            "moduleName": "ChoiceMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -9044,36 +9145,6 @@
           },
           {
             "kind": "Function",
-            "name": "getTCData",
-            "printedName": "getTCData()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "ChoiceMobile.TCData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TCData",
-                    "printedName": "ChoiceMobile.TCData",
-                    "usr": "c:@M@ChoiceMobile@objc(cs)TCData"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@ChoiceMobile@objc(cs)ChoiceCmp(im)getTCData",
-            "mangledName": "$s12ChoiceMobile0A3CmpC9getTCDataAA0E0CSgyF",
-            "moduleName": "ChoiceMobile",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getNonIABData",
             "printedName": "getNonIABData()",
             "children": [
@@ -10544,6 +10615,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChoiceMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ChoiceCmpDelegate",
         "printedName": "ChoiceCmpDelegate",
@@ -10819,6 +10900,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ChoiceMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "GVLRepositoryProtocol",
         "printedName": "GVLRepositoryProtocol",
@@ -10826,12 +10917,18 @@
           {
             "kind": "Function",
             "name": "getGVL",
-            "printedName": "getGVL(onComplete:)",
+            "printedName": "getGVL(version:onComplete:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               },
               {
                 "kind": "TypeFunc",
@@ -10853,8 +10950,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12ChoiceMobile21GVLRepositoryProtocolP6getGVL10onCompleteyyAA0F0Cc_tF",
-            "mangledName": "$s12ChoiceMobile21GVLRepositoryProtocolP6getGVL10onCompleteyyAA0F0Cc_tF",
+            "usr": "s:12ChoiceMobile21GVLRepositoryProtocolP6getGVL7version10onCompleteySi_yAA0F0CctF",
+            "mangledName": "$s12ChoiceMobile21GVLRepositoryProtocolP6getGVL7version10onCompleteySi_yAA0F0CctF",
             "moduleName": "ChoiceMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : ChoiceMobile.GVLRepositoryProtocol>",
             "sugared_genericSig": "<Self where Self : ChoiceMobile.GVLRepositoryProtocol>",
@@ -11496,15 +11593,22 @@
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/NonIabVendorList.swift",
+      "kind": "Array",
+      "offset": 1824,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/NonIabVendorList.swift",
       "kind": "StringLiteral",
-      "offset": 1843,
+      "offset": 1876,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/NonIabVendorList.swift",
       "kind": "BooleanLiteral",
-      "offset": 1869,
+      "offset": 1902,
       "length": 4,
       "value": "true"
     },
@@ -12328,6 +12432,20 @@
       "value": "\"Google\""
     },
     {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Translations\/Models\/MobileUILabels.swift",
+      "kind": "StringLiteral",
+      "offset": 1823,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Translations\/Models\/MobileUILabels.swift",
+      "kind": "StringLiteral",
+      "offset": 1832,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Translations\/TranslationsRepository.swift",
       "kind": "StringLiteral",
       "offset": 246,
@@ -12442,16 +12560,51 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
       "kind": "StringLiteral",
-      "offset": 331,
+      "offset": 364,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
       "kind": "StringLiteral",
-      "offset": 331,
+      "offset": 364,
       "length": 13,
       "value": "\"description\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 97,
+      "value": "\"* \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 1028,
+      "length": 6,
+      "value": "\"\n* \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 6,
+      "value": "\"\n* \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 1083,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 1086,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Encoder\/Field\/PurposeRestrictionVectorEncoder.swift",
@@ -14508,22 +14661,36 @@
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/PortalConfigRepository.swift",
       "kind": "StringLiteral",
       "offset": 2115,
-      "length": 37,
+      "length": 122,
       "value": "\"Could not find configuration for p-\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/PortalConfigRepository.swift",
       "kind": "StringLiteral",
-      "offset": 2168,
-      "length": 13,
+      "offset": 2164,
+      "length": 6,
       "value": "\" bundle id \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/PortalConfigRepository.swift",
       "kind": "StringLiteral",
-      "offset": 2317,
-      "length": 25,
-      "value": "\"Unexpected config error\""
+      "offset": 2207,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/PortalConfigRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 2235,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/PortalConfigRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 2341,
+      "length": 42,
+      "value": "\"Unexpected config error retriving portal\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Status\/DisplayStatus.swift",
@@ -14556,287 +14723,315 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkVendor.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 875,
       "length": 11,
       "value": "\"policyUrl\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkVendor.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 875,
       "length": 11,
       "value": "\"policyUrl\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkVendor.swift",
+      "kind": "Array",
+      "offset": 1888,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkVendor.swift",
+      "kind": "Array",
+      "offset": 1978,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 1431,
+      "offset": 1522,
       "length": 16,
       "value": "\"Privacy Policy\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 1592,
       "length": 13,
       "value": "\"Disclosures\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 1698,
-      "length": 19,
-      "value": "\"LEGAL DESCRIPTION\""
+      "offset": 1789,
+      "length": 10,
+      "value": "\"EXAMPLES\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 1908,
-      "length": 19,
-      "value": "\"LEGAL DESCRIPTION\""
+      "offset": 1990,
+      "length": 10,
+      "value": "\"EXAMPLES\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2212,
       "length": 21,
       "value": "\"LEGITIMATE INTEREST\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2417,
       "length": 10,
       "value": "\"FEATURES\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2559,
+      "offset": 2632,
       "length": 18,
       "value": "\"SPECIAL PURPOSES\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2855,
       "length": 18,
       "value": "\"SPECIAL FEATURES\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2996,
+      "offset": 3005,
+      "length": 18,
+      "value": "\"DATA DECLARATION\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3088,
+      "length": 16,
+      "value": "\"Data Retention\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3300,
       "length": 16,
       "value": "\"Max cookie age\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3215,
+      "offset": 3519,
       "length": 24,
       "value": "\"Uses non cookie access\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3420,
+      "offset": 3724,
       "length": 9,
       "value": "\"seconds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3601,
+      "offset": 3905,
       "length": 6,
       "value": "\"days\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3776,
+      "offset": 4080,
       "length": 5,
       "value": "\"Yes\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3947,
+      "offset": 4251,
       "length": 4,
       "value": "\"No\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4014,
+      "offset": 4318,
       "length": 33,
       "value": "\"Error: cannot load vendor file.\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4229,
+      "offset": 4533,
       "length": 6,
       "value": "\"Done\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4962,
+      "offset": 5266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5106,
+      "offset": 5410,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5230,
+      "offset": 5534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5375,
+      "offset": 5679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5522,
+      "offset": 5826,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5687,
+      "offset": 5991,
       "length": 5,
       "value": "86400"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5713,
+      "offset": 6017,
       "length": 33,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5726,
+      "offset": 6030,
       "length": 5,
       "value": "86400"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5732,
+      "offset": 6036,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5745,
+      "offset": 6049,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5783,
+      "offset": 6087,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5794,
+      "offset": 6098,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5810,
+      "offset": 6114,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 5997,
+      "offset": 6301,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 6203,
+      "offset": 6507,
       "length": 34,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 6225,
+      "offset": 6529,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6234,
+      "offset": 6538,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 6236,
+      "offset": 6540,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6278,
+      "offset": 6582,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6400,
+      "offset": 6704,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 6472,
+      "offset": 6776,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 6477,
+      "offset": 6781,
       "length": 6,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationModel.swift",
       "kind": "StringLiteral",
-      "offset": 7655,
+      "offset": 7959,
       "length": 2,
       "value": "\"\""
     },
@@ -15081,98 +15276,98 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "BooleanLiteral",
-      "offset": 293,
+      "offset": 318,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "BooleanLiteral",
-      "offset": 325,
+      "offset": 350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 437,
+      "offset": 462,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 443,
+      "offset": 468,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 507,
+      "offset": 532,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 513,
+      "offset": 538,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 649,
+      "offset": 674,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 655,
+      "offset": 680,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 733,
+      "offset": 758,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 739,
+      "offset": 764,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 919,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 925,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 988,
+      "offset": 1013,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Feature.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1019,
       "length": 40,
       "value": "\"\""
     },
@@ -15236,36 +15431,36 @@
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
       "kind": "StringLiteral",
       "offset": 2678,
-      "length": 5,
-      "value": "\"2.0\""
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 2705,
+      "offset": 2702,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 2726,
+      "offset": 2723,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 2750,
+      "offset": 2747,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
       "kind": "IntegerLiteral",
-      "offset": 2780,
-      "length": 1,
-      "value": "2"
+      "offset": 2777,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/PingResponse.swift",
@@ -15347,35 +15542,35 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Vendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 536,
+      "offset": 571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Vendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 573,
+      "offset": 608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Vendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 613,
+      "offset": 648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Vendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 644,
+      "offset": 679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Vendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 676,
+      "offset": 711,
       "length": 4,
       "value": "true"
     },
@@ -15479,15 +15674,22 @@
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GoogleVendor\/GoogleVendor.swift",
+      "kind": "Array",
+      "offset": 840,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GoogleVendor\/GoogleVendor.swift",
       "kind": "IntegerLiteral",
-      "offset": 902,
+      "offset": 935,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GoogleVendor\/GoogleVendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 969,
+      "offset": 1002,
       "length": 4,
       "value": "true"
     },
@@ -15563,15 +15765,22 @@
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Publisher\/PublisherAsVendor.swift",
+      "kind": "Array",
+      "offset": 1373,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Publisher\/PublisherAsVendor.swift",
       "kind": "StringLiteral",
-      "offset": 1367,
+      "offset": 1400,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Publisher\/PublisherAsVendor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1504,
+      "offset": 1537,
       "length": 4,
       "value": "true"
     },
@@ -15760,98 +15969,98 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "BooleanLiteral",
-      "offset": 523,
+      "offset": 585,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "BooleanLiteral",
-      "offset": 555,
+      "offset": 617,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 729,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 673,
+      "offset": 735,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 799,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 805,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 879,
+      "offset": 941,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 885,
+      "offset": 947,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 963,
+      "offset": 1025,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 969,
+      "offset": 1031,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 1125,
+      "offset": 1187,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 1131,
+      "offset": 1193,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1281,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL\/Purpose.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1287,
       "length": 40,
       "value": "\"\""
     },
@@ -16537,184 +16746,191 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1710,
       "length": 20,
       "value": "\"quantcastAccountId\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1835,
       "length": 18,
       "value": "\"vendorPurposeIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1836,
+      "offset": 1887,
       "length": 19,
       "value": "\"vendorFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1957,
       "length": 36,
       "value": "\"vendorPurposeLegitimateInterestIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2034,
       "length": 26,
       "value": "\"vendorSpecialFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2050,
+      "offset": 2101,
       "length": 26,
       "value": "\"vendorSpecialPurposesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2164,
+      "offset": 2215,
       "length": 7,
       "value": "\"lang_\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 2248,
       "length": 11,
       "value": "\"displayUi\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2244,
+      "offset": 2295,
       "length": 21,
       "value": "\"publisherPurposeIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2370,
       "length": 39,
       "value": "\"publisherPurposeLegitimateInterestIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2402,
+      "offset": 2453,
       "length": 29,
       "value": "\"publisherSpecialPurposesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2468,
+      "offset": 2519,
       "length": 22,
       "value": "\"publisherFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2585,
       "length": 29,
       "value": "\"publisherSpecialFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1710,
       "length": 20,
       "value": "\"quantcastAccountId\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1835,
       "length": 18,
       "value": "\"vendorPurposeIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1836,
+      "offset": 1887,
       "length": 19,
       "value": "\"vendorFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1957,
       "length": 36,
       "value": "\"vendorPurposeLegitimateInterestIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2034,
       "length": 26,
       "value": "\"vendorSpecialFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2050,
+      "offset": 2101,
       "length": 26,
       "value": "\"vendorSpecialPurposesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2164,
+      "offset": 2215,
       "length": 7,
       "value": "\"lang_\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 2248,
       "length": 11,
       "value": "\"displayUi\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2244,
+      "offset": 2295,
       "length": 21,
       "value": "\"publisherPurposeIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2370,
       "length": 39,
       "value": "\"publisherPurposeLegitimateInterestIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2402,
+      "offset": 2453,
       "length": 29,
       "value": "\"publisherSpecialPurposesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2468,
+      "offset": 2519,
       "length": 22,
       "value": "\"publisherFeaturesIds\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2585,
       "length": 29,
       "value": "\"publisherSpecialFeaturesIds\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/PortalConfig\/CoreConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7164,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Response\/CmpJSONContent.swift",
@@ -18664,421 +18880,428 @@
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
+      "kind": "Dictionary",
+      "offset": 3570,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 3619,
+      "offset": 3669,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 3708,
+      "offset": 3758,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 3742,
+      "offset": 3792,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 3876,
+      "offset": 3926,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 4137,
+      "offset": 4187,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 4789,
+      "offset": 4839,
       "length": 30,
       "value": "\"Unsupported language \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 4818,
+      "offset": 4868,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 4453,
+      "offset": 4503,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 4872,
+      "offset": 4922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 5987,
+      "offset": 6037,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 6337,
+      "offset": 6387,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 6381,
+      "offset": 6431,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 6419,
+      "offset": 6469,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 6464,
+      "offset": 6514,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 6633,
+      "offset": 6683,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 6648,
+      "offset": 6698,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 6982,
+      "offset": 7032,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 6997,
+      "offset": 7047,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7144,
+      "offset": 7194,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7159,
+      "offset": 7209,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7328,
+      "offset": 7378,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7343,
+      "offset": 7393,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7857,
+      "offset": 7907,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 7871,
+      "offset": 7921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 7910,
+      "offset": 7960,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 8002,
+      "offset": 8052,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8241,
+      "offset": 8291,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8262,
+      "offset": 8312,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8329,
+      "offset": 8379,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8350,
+      "offset": 8400,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 8355,
+      "offset": 8405,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8435,
+      "offset": 8485,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8456,
+      "offset": 8506,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8666,
+      "offset": 8716,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 8686,
+      "offset": 8736,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 8775,
+      "offset": 8825,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 8817,
+      "offset": 8867,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9182,
+      "offset": 9232,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9204,
+      "offset": 9254,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 9247,
+      "offset": 9297,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 9292,
+      "offset": 9342,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9596,
+      "offset": 9646,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9610,
+      "offset": 9660,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9768,
+      "offset": 9818,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 9789,
+      "offset": 9839,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 10035,
+      "offset": 10085,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Dictionary",
-      "offset": 10136,
+      "offset": 10186,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10280,
+      "offset": 10330,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10286,
+      "offset": 10336,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 10292,
+      "offset": 10342,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10364,
+      "offset": 10414,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10370,
+      "offset": 10420,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 10376,
+      "offset": 10426,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10544,
+      "offset": 10594,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 10550,
+      "offset": 10600,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 11383,
+      "offset": 11433,
       "length": 7,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "StringLiteral",
-      "offset": 11389,
+      "offset": 11439,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "Array",
-      "offset": 11395,
+      "offset": 11445,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 13065,
+      "offset": 13115,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/GVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 13742,
+      "offset": 13792,
       "length": 4,
       "value": "true"
     },
@@ -19637,176 +19860,218 @@
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10186,
+      "length": 59,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10211,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 10234,
+      "length": 8,
+      "value": "\" partners)\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10799,
+      "offset": 10837,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11047,
+      "offset": 11085,
       "length": 103,
       "value": "\"Expected \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11084,
+      "offset": 11122,
       "length": 1,
       "value": "\"` type for reuseIdentifier \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 11149,
+      "offset": 11187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11377,
+      "length": 59,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11402,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11425,
+      "length": 8,
+      "value": "\" partners)\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 11730,
+      "offset": 11806,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12478,
+      "offset": 12554,
       "length": 7,
       "value": "\"Label\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 12540,
+      "offset": 12616,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 12616,
+      "offset": 12692,
       "length": 26,
       "value": "\"CustomLinkCellIdentifier\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13017,
+      "offset": 13093,
       "length": 21,
       "value": "\"CustomLinkCellLabel\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13342,
+      "offset": 13418,
       "length": 103,
       "value": "\"Expected \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13379,
+      "offset": 13455,
       "length": 1,
       "value": "\"` type for reuseIdentifier \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13444,
+      "offset": 13520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 13501,
+      "offset": 13577,
       "length": 28,
       "value": "\"DefaultOptionTableViewCell\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 13746,
+      "offset": 13822,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14112,
+      "offset": 14188,
       "length": 35,
       "value": "\"Special Purposes-id:\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14146,
+      "offset": 14222,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14354,
+      "offset": 14430,
       "length": 27,
       "value": "\"Features-id:\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 14380,
+      "offset": 14456,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14662,
+      "offset": 14738,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14919,
+      "offset": 14995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 14952,
+      "offset": 15028,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15507,
+      "offset": 15583,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15526,
+      "offset": 15602,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 15901,
+      "offset": 15977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsViewController.swift",
       "kind": "StringLiteral",
-      "offset": 16272,
+      "offset": 16348,
       "length": 23,
       "value": "\"OptionsViewController\""
     },
@@ -20221,7 +20486,7 @@
       "kind": "IntegerLiteral",
       "offset": 355,
       "length": 4,
-      "value": "1014"
+      "value": "1020"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
@@ -20275,469 +20540,497 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 4247,
+      "offset": 3463,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 4966,
+      "offset": 4292,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4945,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "Array",
-      "offset": 5556,
+      "offset": 5853,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 6701,
+      "offset": 6830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7121,
+      "offset": 7250,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7284,
+      "offset": 7413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7496,
+      "offset": 7625,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7732,
+      "offset": 7861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 7926,
+      "offset": 8055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 8012,
+      "offset": 8141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 8069,
+      "offset": 8198,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 8115,
+      "offset": 8244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 8284,
+      "offset": 8413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 8482,
+      "offset": 8611,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 8861,
+      "offset": 8990,
       "length": 118,
       "value": "\"Could not find rootView controller. Make sure your rootViewController is attached to a keywindow before starting CMP\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 9331,
+      "offset": 9460,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 9476,
+      "offset": 9605,
       "length": 119,
       "value": "\"Could not find rootView controller. Make sure your rootViewController is attached to a keywindow before starting CCPA\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 10429,
+      "offset": 10558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 10474,
+      "offset": 10603,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 10858,
+      "offset": 10987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 11042,
+      "offset": 11171,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 11517,
+      "offset": 11646,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 11544,
+      "offset": 11673,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 11816,
+      "offset": 11945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 12165,
+      "offset": 12294,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 12212,
+      "offset": 12341,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 12435,
+      "offset": 12564,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12722,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 12548,
+      "offset": 12726,
+      "length": 5,
+      "value": "\"2.2\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
+      "kind": "StringLiteral",
+      "offset": 12734,
       "length": 5,
       "value": "\"2.0\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 12712,
+      "offset": 12898,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 12746,
-      "length": 1,
-      "value": "2"
+      "offset": 12970,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 12922,
+      "offset": 13147,
       "length": 5,
       "value": "\"USP\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 13009,
+      "offset": 13234,
       "length": 3,
       "value": "\"N\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 13052,
+      "offset": 13277,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 13066,
+      "offset": 13291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 13082,
+      "offset": 13307,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 13359,
+      "offset": 13584,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 13507,
+      "offset": 13732,
       "length": 63,
       "value": "\"CMP has not loaded yet, run startChoice with the pCode first.\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 13638,
+      "offset": 13863,
       "length": 66,
       "value": "\"ChoiceCmp delegate was not set, run startChoice with pCode first\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 13945,
+      "offset": 14170,
       "length": 63,
       "value": "\"CMP has not loaded yet, run startChoice with the pCode first.\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 14076,
+      "offset": 14301,
       "length": 66,
       "value": "\"ChoiceCmp delegate was not set, run startChoice with pCode first\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 14320,
+      "offset": 14545,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 14377,
+      "offset": 14602,
       "length": 3,
       "value": "\"*\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 15040,
+      "offset": 15265,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 15267,
+      "offset": 15492,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 16012,
+      "offset": 16238,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16037,
+      "offset": 16263,
       "length": 4,
       "value": "\"p-\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 16145,
+      "offset": 16371,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 16186,
+      "offset": 16412,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16252,
+      "offset": 16478,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16475,
+      "offset": 16701,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16499,
+      "offset": 16725,
       "length": 14,
       "value": "\"euconsent-v2\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16569,
+      "offset": 16795,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "IntegerLiteral",
-      "offset": 16628,
+      "offset": 16854,
       "length": 5,
       "value": "60000"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16817,
+      "offset": 17043,
       "length": 42,
       "value": "\"Cookie was set with value \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16858,
+      "offset": 17084,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 16985,
+      "offset": 17211,
       "length": 25,
       "value": "\"\n\nCookies: \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 17009,
+      "offset": 17235,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 17153,
+      "offset": 17379,
       "length": 24,
       "value": "\"The cookie was not set\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 17222,
+      "offset": 17448,
       "length": 25,
       "value": "\"Available from iOS 11.0\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 17334,
+      "offset": 17560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 17551,
+      "offset": 17777,
       "length": 30,
       "value": "\"window.localStorage.clear();\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 17658,
+      "offset": 17884,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 17805,
+      "offset": 18031,
       "length": 18,
       "value": "\"_cmpRepromptHash\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "Array",
-      "offset": 18009,
+      "offset": 18235,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 18138,
+      "offset": 18364,
       "length": 47,
       "value": "\"Object.assign(window.localStorage, \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "StringLiteral",
-      "offset": 18182,
+      "offset": 18408,
       "length": 1,
       "value": "\");\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/ChoiceCmp.swift",
       "kind": "BooleanLiteral",
-      "offset": 18270,
+      "offset": 18496,
       "length": 4,
       "value": "true"
     },
@@ -22473,70 +22766,77 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "StringLiteral",
-      "offset": 4010,
+      "offset": 3121,
+      "length": 13,
+      "value": "\"${partners}\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4477,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4233,
+      "offset": 4700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4335,
+      "offset": 4802,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4451,
+      "offset": 4918,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4606,
+      "offset": 5073,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5468,
+      "offset": 5935,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5483,
+      "offset": 5950,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "StringLiteral",
-      "offset": 5717,
+      "offset": 6184,
       "length": 24,
       "value": "\"Error encoding TCModel\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5967,
+      "offset": 6434,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/MainPrivacy\/PrivacyModel.swift",
       "kind": "StringLiteral",
-      "offset": 6475,
+      "offset": 6942,
       "length": 40,
       "value": "\"Error encoding Non IAB vendors consent\""
     },
@@ -22872,476 +23172,546 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1368,
+      "offset": 1430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "Array",
-      "offset": 1451,
+      "offset": 1567,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1808,
+      "offset": 1924,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1992,
+      "offset": 2108,
       "length": 36,
       "value": "\"Name: \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2023,
+      "offset": 2139,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2094,
+      "offset": 2210,
       "length": 30,
       "value": "\"Type: \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2119,
+      "offset": 2235,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2190,
+      "offset": 2306,
       "length": 53,
       "value": "\"Max age in seconds: \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2354,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2309,
+      "offset": 2425,
       "length": 34,
       "value": "\"Domain: \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2338,
+      "offset": 2454,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2409,
+      "offset": 2525,
       "length": 29,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2432,
+      "offset": 2548,
       "length": 1,
       "value": "\":\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2638,
+      "offset": 2754,
       "length": 24,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2657,
+      "offset": 2773,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2761,
+      "offset": 2877,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3289,
+      "offset": 3405,
       "length": 39,
       "value": "\"\n\n \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3319,
+      "offset": 3435,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3322,
+      "offset": 3438,
       "length": 1,
       "value": "\" \n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3551,
+      "offset": 3667,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3853,
+      "offset": 3969,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3878,
+      "offset": 3994,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3924,
+      "offset": 4040,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 3957,
+      "offset": 4073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4225,
+      "offset": 4341,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4392,
+      "offset": 4508,
       "length": 80,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4419,
+      "offset": 4535,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4467,
+      "offset": 4583,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4648,
+      "offset": 4764,
       "length": 96,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4682,
+      "offset": 4798,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4739,
+      "offset": 4855,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4812,
+      "offset": 5036,
+      "length": 98,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5068,
+      "length": 1,
+      "value": "\": \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5115,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5120,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5125,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5129,
+      "length": 1,
+      "value": "\"\n\n\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 5202,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4926,
+      "offset": 5316,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4962,
+      "offset": 5352,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5120,
+      "offset": 5510,
       "length": 35,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5150,
+      "offset": 5540,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5298,
+      "offset": 5688,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5344,
+      "offset": 5734,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5508,
+      "offset": 5898,
       "length": 35,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5538,
+      "offset": 5928,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5687,
+      "offset": 6077,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5730,
+      "offset": 6120,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5916,
+      "offset": 6306,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5988,
+      "offset": 6378,
       "length": 42,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6025,
+      "offset": 6415,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6167,
+      "offset": 6557,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6203,
+      "offset": 6593,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6361,
+      "offset": 6751,
       "length": 35,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6391,
+      "offset": 6781,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6540,
+      "offset": 6930,
       "length": 48,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6583,
+      "offset": 6973,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6769,
+      "offset": 7159,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6841,
+      "offset": 7231,
       "length": 42,
       "value": "\"• \""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6878,
+      "offset": 7268,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 6938,
+      "offset": 7425,
+      "length": 47,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7467,
+      "length": 1,
+      "value": "\"\n\n\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7632,
+      "length": 35,
+      "value": "\"• \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7662,
+      "length": 1,
+      "value": "\"\n\n\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7722,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7305,
+      "offset": 8089,
       "length": 6,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7367,
+      "offset": 8151,
       "length": 39,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7404,
+      "offset": 8188,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7531,
+      "offset": 8315,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7724,
+      "offset": 8508,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7752,
+      "offset": 8536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7754,
+      "offset": 8538,
       "length": 5,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7758,
+      "offset": 8542,
       "length": 31,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7786,
+      "offset": 8570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7788,
+      "offset": 8572,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7906,
+      "offset": 8690,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7934,
+      "offset": 8718,
       "length": 1,
       "value": "\"-id:\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Information\/InformationViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7943,
+      "offset": 8727,
       "length": 1,
       "value": "\"\""
     },
@@ -24081,6 +24451,48 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "IntegerLiteral",
+      "offset": 592,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "Dictionary",
+      "offset": 688,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "Dictionary",
+      "offset": 800,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "IntegerLiteral",
+      "offset": 855,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "Dictionary",
+      "offset": 881,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/VendorDataRetention.swift",
+      "kind": "Dictionary",
+      "offset": 916,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Encoder\/Field\/DateEncoder.swift",
       "kind": "StringLiteral",
       "offset": 275,
@@ -24111,49 +24523,84 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "StringLiteral",
-      "offset": 275,
-      "length": 56,
-      "value": "\"https:\/\/test.cmp.quantcast.com\/GVL-v2\/vendor-list.json\""
+      "offset": 279,
+      "length": 38,
+      "value": "\"https:\/\/test.cmp.quantcast.com\/GVL-v\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "StringLiteral",
-      "offset": 373,
-      "length": 51,
-      "value": "\"https:\/\/cmp.quantcast.com\/GVL-v2\/vendor-list.json\""
+      "offset": 348,
+      "length": 33,
+      "value": "\"https:\/\/cmp.quantcast.com\/GVL-v\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "StringLiteral",
-      "offset": 719,
+      "offset": 408,
+      "length": 19,
+      "value": "\"\/vendor-list.json\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
       "length": 12,
       "value": "\"bundledGVL\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "StringLiteral",
-      "offset": 888,
+      "offset": 955,
       "length": 13,
       "value": "\"vendor-list\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "StringLiteral",
-      "offset": 918,
+      "offset": 985,
       "length": 6,
       "value": "\"json\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
+      "length": 33,
+      "value": "\"Grabbing GVL version \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1109,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1150,
+      "offset": 1293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
+      "length": 56,
+      "value": "\"Error downloading GVL version \""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1496,
+      "length": 1,
+      "value": "\".  Using Cache\""
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/GVLRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1369,
+      "offset": 1610,
       "length": 4,
       "value": "true"
     },
@@ -24237,266 +24684,266 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 1834,
+      "offset": 1841,
       "length": 10,
       "value": "\"Purposes\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 1991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 2068,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2111,
+      "offset": 2118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2312,
+      "offset": 2319,
       "length": 31,
       "value": "\"Special Purposes and Features\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2519,
+      "offset": 2526,
       "length": 10,
       "value": "\"Partners\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2547,
+      "offset": 2554,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2631,
+      "offset": 2638,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2635,
+      "offset": 2642,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2722,
+      "offset": 2729,
       "length": 10,
       "value": "\"Purposes\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2770,
+      "offset": 2777,
       "length": 31,
       "value": "\"Special Purposes and Features\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2832,
+      "offset": 2839,
       "length": 10,
       "value": "\"Partners\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 2981,
+      "offset": 2988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3057,
+      "offset": 3064,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3107,
+      "offset": 3114,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3145,
+      "offset": 3152,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3229,
+      "offset": 3236,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3233,
+      "offset": 3240,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 3448,
+      "offset": 3455,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3628,
+      "offset": 3635,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
+      "offset": 3792,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 3968,
+      "offset": 3975,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 4078,
+      "offset": 4085,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 4577,
+      "offset": 4584,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4834,
+      "offset": 4841,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 5014,
+      "offset": 5021,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 5215,
+      "offset": 5222,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5461,
+      "offset": 5468,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 5778,
+      "offset": 5785,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 5948,
+      "offset": 5955,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6096,
+      "offset": 6103,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6185,
+      "offset": 6192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6284,
+      "offset": 6291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6385,
+      "offset": 6392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7007,
+      "offset": 7014,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7022,
+      "offset": 7029,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "StringLiteral",
-      "offset": 7256,
+      "offset": 7263,
       "length": 24,
       "value": "\"Error encoding TCModel\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/UI\/Screens\/Options\/OptionsModel.swift",
       "kind": "Array",
-      "offset": 7384,
+      "offset": 7391,
       "length": 2,
       "value": "[]"
     },
@@ -24832,65 +25279,79 @@
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 832,
+      "offset": 882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 947,
+      "offset": 997,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 1063,
+      "offset": 1231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 1212,
+      "offset": 1380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "Dictionary",
-      "offset": 1281,
+      "offset": 1449,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "BooleanLiteral",
-      "offset": 1765,
+      "offset": 2118,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "Dictionary",
-      "offset": 1834,
+      "offset": 2187,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "Dictionary",
-      "offset": 2366,
+      "offset": 2904,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
       "kind": "Dictionary",
-      "offset": 2995,
+      "offset": 3533,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4557,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/NetworkGVL\/NetworkGVL.swift",
+      "kind": "StringLiteral",
+      "offset": 4572,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Core\/Model\/PurposeRestriction.swift",
@@ -24960,14 +25421,14 @@
       "kind": "StringLiteral",
       "offset": 220,
       "length": 49,
-      "value": "\"https:\/\/test.cmp.quantcast.com\/GVL-v2\/purposes-\""
+      "value": "\"https:\/\/test.cmp.quantcast.com\/GVL-v3\/purposes-\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Translations\/PurposesContentUrl.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 44,
-      "value": "\"https:\/\/cmp.quantcast.com\/GVL-v2\/purposes-\""
+      "value": "\"https:\/\/cmp.quantcast.com\/GVL-v3\/purposes-\""
     },
     {
       "filePath": "\/Users\/kevin_smith\/Apps\/CHOICE-Cmp-TCFv2-iOS\/ChoiceMobile\/Api\/Translations\/PurposesContentUrl.swift",
